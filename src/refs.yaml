@@ -1,0 +1,14 @@
+bastani2024generative:
+  type: Article
+  title: Generative AI Can Harm Learning
+  author:
+    - Bastani, Hamsa
+    - Bastani, Osbert
+    - Sungu, Alp
+    - Ge, Haosen
+    - Kabakçı, Özge
+    - Mariman, Rei
+  date: 2024
+  parent:
+    type: Periodical
+    title: Available at SSRN 4895486
