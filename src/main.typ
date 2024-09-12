@@ -71,6 +71,13 @@ Die Teilnahme an der Studie ist freiwillig für alle Studierenden des Studiengan
 
 Zu Beginn des Semesters werden alle Studierenden gefragt, wer Interesse an der Teilnahme an der Studie hat. Sie werden über das Ziel der Studie und die Gruppen informiert. Die Studierenden, die teilnehmen möchten, werden einen Fragebogen ausfüllen, in dem sie Ihre Haltung zum Thema KI im allgemeinen, sowie ihre Vorerfahrung in der Software-Entwicklung angeben. Anhand dieser Angaben werde ich die Studierenden so in die Gruppen einteilen, dass die angegebenen Faktoren gleichmäßig verteilt sind.
 
+== Verwendete Tools
+
+- *#link("https://claude.ai")[Claude]* #linebreak()
+  Ein Chatbot, mit dem man in natürlicher Sprache eine Konversation führen kann.
+- *#link("https://www.cursor.com/")[Cursor]* #linebreak()
+  Ein Fork von Visual Studio Code, der mit KI-Tools erweitert wurde.
+
 == Datenerhebung
 
 + Die Lerneffektivität wird anhand der Bewertung der Aufgaben gemessen. Hier möchte ich selbsteinschätzung der Studierenden vermeiden, da diese inakkurat ist.
