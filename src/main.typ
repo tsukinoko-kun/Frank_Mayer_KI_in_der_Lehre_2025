@@ -19,11 +19,14 @@
 
 #set text(font: "Times New Roman")
 #set text(lang: "de")
-#show heading: it => block(breakable: false, [
-  #v(0.5em)
-  #it
-  #v(0.3em)
-])
+#show heading: it => block(
+  breakable: false,
+  [
+    #v(0.5em)
+    #it
+    #v(0.3em)
+  ],
+)
 
 = Einführung
 
@@ -38,12 +41,12 @@ Mir geht es also darum, herauszufinden, wie wir in der Lehre für Software-Engin
 = Forschungsfragen
 
 == Hauptfrage
-  Wie beeinflusst der Einsatz von KI-basierten Tools die Lerneffektivität von Studierenden in Hochschulkursen des Software-Engineering-Studiengangs?
+Wie beeinflusst der Einsatz von KI-basierten Tools die Lerneffektivität von Studierenden in Hochschulkursen des Software-Engineering-Studiengangs?
 
 == Unterfragen
-  + Wie gehen Studierende mit verschiedenen Arten von Tools um?
-  + Wie verändert sich die Selbsteinschätzung der Studierenden?
-  + Welche Auswirkungen hat die Vorerfahrung der Studierenden in der Software-Entwicklung auf die oben genannten Punkte?
++ Wie gehen Studierende mit verschiedenen Arten von Tools um?
++ Wie verändert sich die Selbsteinschätzung der Studierenden?
++ Welche Auswirkungen hat die Vorerfahrung der Studierenden in der Software-Entwicklung auf die oben genannten Punkte?
 
 = Methodik
 
@@ -59,9 +62,6 @@ Die Studierenden werde ich in zwei Gruppen aufteilen:
 - *Gruppe B*: KI-Tutor #linebreak()
   Die Studierenden werden dazu aufgefordert, beim Lernen mit KI zu arbeiten. Das heißt im Detail, dass Chatbots wie Claude für Verständnisfragen genutzt werden sollen. Der Chatbot wird so konfiguriert, dass er sich wie ein Tutor verhält und die Studierenden an die Hand nimmt aber keine konkrete Lösung ausgibt. #linebreak()
   Damit es nicht daran scheitert, dass die Studierenden keine KI-Tools kennen, oder nicht wissen, wie sie diese verwenden sollen, bekommen sie von mir eine Einführung und Unterstützung bei der Verwendung. Für alles, was bewertet wird, müssen sie die KI-Tools deaktivieren. Das dient dazu, das Ergebnis der Studie "Generative AI Can Harm Learning" @bastani2024generative zu verifizieren, bei der festgestellt wurde, dass die Nutzung von KI eine kurzzeitige Verbesserung des Lernerfolgs bewirkt, sobald die KI-Tools deaktiviert werden, fielen die Testpersonen jedoch hinter die Kontrollgruppe zurück.
-- *Gruppe C*: KI-Assistent #linebreak()
-  Die Studierenden werden dazu aufgefordert, beim Lernen und Arbeiten verschiedenste KI-Tools zu verwenden. Das heißt im Detail, dass sie Chatbots wie Claude für Verständnisfragen nutzen sollen, aber auch Code-Generatoren wie GitHub Copilot oder TabNine. Die KIs werden in dieser Gruppe nicht vorkonfiguriert. Die Studierenden dürfen selbst Konfigurationen vornehmen. #linebreak()
-  Auch hier bekommen die Studierenden eine Einführung in KI-Tools. Für alles, was bewertet wird, müssen sie diese aus denselben Gründen deaktivieren wie Gruppe B.
 
 Die Aufgaben sind regulär aus der Vorlesung und werden nicht verändert. Auch die Bewertung erfolgt ohne Rücksicht auf die Gruppenzugehörigkeit.
 
@@ -81,7 +81,7 @@ Zu Beginn des Semesters werden alle Studierenden gefragt, wer Interesse an der T
 == Datenerhebung
 
 + Die Lerneffektivität wird anhand der Bewertung der Aufgaben gemessen. Hier möchte ich selbsteinschätzung der Studierenden vermeiden, da diese inakkurat ist.
-+ Wie die Studierenden mit verschiedenen Arten von Tools umgehen, wird durch Beobachtung ermittelt. Hier werde ich alles auffällige notieren und später auswerten. In den Tutorien der Gruppen B und C werde ich wenig selbst mit den Studierenden interagieren, daher ist die gleichzeitige Beobachtung möglich. Bei Gruppe A gibt es keine KI-Tools, daher müssen sie auch nicht bei der Verwendung dieser beobachtet werden.
++ Wie die Studierenden mit verschiedenen Arten von Tools umgehen, wird durch Beobachtung ermittelt. Hier werde ich alles auffällige notieren und später auswerten. In den Tutorien der Gruppe B werde ich wenig selbst mit den Studierenden interagieren, daher ist die gleichzeitige Beobachtung möglich. Bei Gruppe A gibt es keine KI-Tools, daher müssen sie auch nicht bei der Verwendung dieser beobachtet werden.
 + Die Selbsteinschätzung der Studierenden wird durch Fragebögen ermittelt. Dieser bildet direkt die Selbsteinschätzung ab und wird alleine durchgeführt. Dieser Fragebogen wird wöchentlich ausgefüllt und besteht aus vielen Skalen, die die eigene Wahrnehmung auf Lernfortschritt, Leistung, Motivation und Wissensstand abfragen.
 + Die Vorerfahrung der Studierenden in der Software-Entwicklung wird durch einen Fragebogen und Lebenslauf ermittelt. Die Erfahrung wird in einer Schätzung der Anzahl der Stunden, die die Studierenden bereits in der Software-Entwicklung verbracht haben, gemessen. #linebreak()
   Das ist eine sehr ungenaue Angabe, aber Jahre sind nicht aussagekräftig, da jeder unterschiedlich viel Stunden pro Tag und Tage pro Woche investiert.
