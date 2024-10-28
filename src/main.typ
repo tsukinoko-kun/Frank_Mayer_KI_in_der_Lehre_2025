@@ -46,7 +46,7 @@ Wie beeinflusst der Einsatz von KI-basierten Tools die Lerneffektivität von Stu
 == Unterfragen
 + Wie verändert sich die Selbsteinschätzung des Wissensstandes der Studierenden über die Zeit?
 + Wie gehen die Studierenden mit den KI-Tools im Vergleich zu einem Tutor um?
-+ Welche Auswirkungen hat die Vorerfahrung der Studierenden in der Software-Entwicklung auf die oben genannten Punkte?
++ Welche Auswirkung hat das Verwenden der KI-Tools auf die Selbsteinschätzung der Studierenden?
 
 = Methodik
 
@@ -88,15 +88,20 @@ Nach meiner persönlichen Erfahrung ist Claude am besten als Tutor geeignet, da 
 
 == Datenerhebung
 
-+ Die Lerneffektivität wird anhand der Bewertung der Aufgaben gemessen. Hier möchte ich selbsteinschätzung der Studierenden vermeiden, da diese inakkurat ist. Die Bewertung erfolgt über uns Tutoren. Wir bekommen eine Beispiel-Lösung vom Professor und besprächen untereinander, was wir als korrekt ansehen und was nicht. Ein Tutor übernimmt die Bewertung einer Teilaufgabe vollständig (für alle Studierenden), um eine Vergleichbarkeit zu gewährleisten.
++ Die Lerneffektivität wird anhand der Bewertung der Aufgaben gemessen. Hier möchte ich Selbsteinschätzungen der Studierenden vermeiden, da diese inakkurat ist. Die Bewertung erfolgt über uns Tutoren. Wir bekommen eine Beispiel-Lösung vom Professor und besprächen untereinander, was wir als korrekt ansehen und was nicht. Ein Tutor übernimmt die Bewertung einer Teilaufgabe vollständig (für alle Studierenden), um eine Vergleichbarkeit zu gewährleisten.
 + Der Umgang mit dem Tutor und der KI wird über Beobachtung ermittelt. Ich selbst beobachte die Studierenden, während sie mit den KIs arbeiten. Mein Kollege wird die Studierenden beobachten, die mit mir als Tutor interagieren. Diese Beobachtungen werden in einem Protokoll festgehalten. Folgende Fragen sind in diesem Protokoll zu beantworten:
   - Wie präzise formulieren die Studierenden ihre Fragen?
   - Wie gut verstehen die Studierenden die Antworten des Tutors?
   - Fragen die Studierenden nach, wenn sie die Antwort sichtlich nicht verstanden haben? (sichtlich nicht verstanden = zögern bei der Umsetzung, fragen Kommilitonen)
-+ Die Selbsteinschätzung der Studierenden wird durch einen Fragebogen ermittelt. Dieser bildet direkt die Selbsteinschätzung ab und wird alleine durchgeführt. Dieser Fragebogen wird nach jedem Tutorium ausgefüllt und besteht aus vielen Skalen, die die eigene Wahrnehmung auf Lernfortschritt, Leistung, Motivation und Wissensstand abfragen. Wenn ein Student im Tutorium fehlt, fehlt auch die Selbsteinschätzung.
-+ Die Vorerfahrung der Studierenden in der Software-Entwicklung wird durch einen Fragebogen und Lebenslauf ermittelt. Die Erfahrung wird in einer Schätzung der Anzahl der Stunden, die die Studierenden bereits in der Software-Entwicklung verbracht haben, gemessen. #linebreak()
-  Das ist eine sehr ungenaue Angabe, aber Jahre sind nicht aussagekräftig, da jeder unterschiedlich viel Stunden pro Tag und Tage pro Woche investiert.
-+ Da die Studierenden auch alleine an ihren Aufgaben arbeiten werden, müssen sie ein Tagebuch führen, in dem sie festhalten, wie lange sie an den Aufgaben gearbeitet haben, welche Tools sie verwendet haben und was es für Auffälligkeiten gab. Dieses wird bei der Hauptfrage und den Unterfragen 1 und 2 berücksichtigt.
++ Die Selbsteinschätzung der Studierenden wird durch einen Fragebogen ermittelt. Dieser bildet direkt die Selbsteinschätzung ab und wird alleine durchgeführt. Dieser Fragebogen wird nach jedem Tutorium ausgefüllt und besteht aus vielen Skalen, die die eigene Wahrnehmung auf Lernfortschritt, Leistung, Motivation und Wissensstand abfragen. Wenn ein Student im Tutorium fehlt, fehlt auch die Selbsteinschätzung. Bei einer Skala 1-5 steht 1 für "ich stimme nicht zu" und 5 für "ich stimme voll zu". Dabei gibt es folgende Fragen:
+  - Die Aufgabenstellung war für mich ohne Hilfe verständlich (1-5).
+  - Die Hilfestellung des Tutors/der KI war für mich hilfreich (1-5).
+  - Ich habe die Aufgabe ohne Hilfe lösen können (1-5).
+  - Die Hilfestellung des Tutors/der KI hat mich in meiner Lösung beeinflusst (1-5).
+  - Den Antworten des Tutor/der KI habe ich vertraut (1-5).
+  - Mein Wissensstand hat sich durch die Aufgabe verbessert (1-5).
+  - Ich fühle mich sicher eine ähnliche Aufgabe ohne Hilfe lösen zu können (1-5).
+  - Sonstige Anmerkungen (Freitextfeld).
 
 == Aufgaben
 
