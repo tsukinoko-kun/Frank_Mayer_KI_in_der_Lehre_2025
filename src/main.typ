@@ -41,12 +41,12 @@ Mir geht es also darum, herauszufinden, wie wir in der Lehre für Software-Engin
 = Forschungsfragen
 
 == Hauptfrage
-Wie beeinflusst der Einsatz von KI-basierten Tools die Lerneffektivität von Studierenden in Hochschulkursen des Software-Engineering-Studiengangs?
+Wie beeinflusst der Einsatz von KI-basierten Tools den Lernerfolg von Studierenden in Hochschulkursen des Software-Engineering-Studiengangs?
 
 == Unterfragen
 + Wie verändert sich die Selbsteinschätzung des Wissensstandes der Studierenden über die Zeit?
 + Wie gehen die Studierenden mit den KI-Tools im Vergleich zu einem Tutor um?
-+ Welche Auswirkung hat das Verwenden der KI-Tools auf die Selbsteinschätzung der Studierenden?
++ Wie wirkt sich das Lernen mit den KI-Tools auf die Selbsteinschätzung der Studierenden im Verhältnis zum gemessenen Lernerfolg aus?
 
 = Methodik
 
@@ -88,7 +88,7 @@ Nach meiner persönlichen Erfahrung ist Claude am besten als Tutor geeignet, da 
 
 == Datenerhebung
 
-+ Die Lerneffektivität wird anhand der Bewertung der Aufgaben gemessen. Hier möchte ich Selbsteinschätzungen der Studierenden vermeiden, da diese inakkurat ist. Die Bewertung erfolgt über uns Tutoren. Wir bekommen eine Beispiel-Lösung vom Professor und besprächen untereinander, was wir als korrekt ansehen und was nicht. Ein Tutor übernimmt die Bewertung einer Teilaufgabe vollständig (für alle Studierenden), um eine Vergleichbarkeit zu gewährleisten.
++ Der Lernerfolg wird anhand der Bewertung der Aufgaben gemessen. Hier möchte ich Selbsteinschätzungen der Studierenden vermeiden, da diese inakkurat ist. Die Bewertung erfolgt über uns Tutoren. Wir bekommen eine Beispiel-Lösung vom Professor und besprechen untereinander, was wir als korrekt ansehen und was nicht. Ein Tutor übernimmt die Bewertung einer Teilaufgabe vollständig (für alle Studierenden), um eine Vergleichbarkeit zu gewährleisten.
 + Der Umgang mit dem Tutor und der KI wird über Beobachtung ermittelt. Ich selbst beobachte die Studierenden, während sie mit den KIs arbeiten. Mein Kollege wird die Studierenden beobachten, die mit mir als Tutor interagieren. Diese Beobachtungen werden in einem Protokoll festgehalten. Folgende Fragen sind in diesem Protokoll zu beantworten:
   - Wie präzise formulieren die Studierenden ihre Fragen?
   - Wie gut verstehen die Studierenden die Antworten des Tutors?
@@ -102,6 +102,7 @@ Nach meiner persönlichen Erfahrung ist Claude am besten als Tutor geeignet, da 
   - Mein Wissensstand hat sich durch die Aufgabe verbessert (1-5).
   - Ich fühle mich sicher eine ähnliche Aufgabe ohne Hilfe lösen zu können (1-5).
   - Sonstige Anmerkungen (Freitextfeld).
+  Die Messung des tatsächlichen Lernerfolgs erfolgt durch die Bewertung der Abgaben.
 
 == Aufgaben
 
