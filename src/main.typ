@@ -50,16 +50,26 @@ Wie beeinflusst der Einsatz von KI-basierten Tools den Lernerfolg von Studierend
 
 = Methodik
 
+== Setting
+
 Als Tutor für die Vorlesung Interaktive Programme an der Hochschule Heilbronn (das ist die erste Programmierveranstaltung im Studium Software Engineering Bachelor), habe ich die Möglichkeit, die Studierenden gezielt mit und ohne KI-Tools lernen zu lassen.
+
+Ich veranstalte ein Tutorium, das eine zusätzliche Veranstaltung zur Vorlesung darstellt. Die Teilnahme ist freiwillig, wird aber vom Professor der Veranstaltung empfohlen. Besonders den Studenten, die Schwierigkeiten haben, wird die Teilnahme nahegelegt.
+
+== Forschungsdesign
+
+In dieser Studie wurde ein quasi-experimentelles Design verwendet, an dem zwei Gruppen von Studenten beteiligt waren: Kontrollgruppe (CG) und Experimentalgruppe (EG).
+
+Beide Gruppen wurden aus den Studierenden der Vorlesung Interaktive Programme zusammengestell.
 
 == Gruppen
 
 Die Studierenden werde ich in zwei Gruppen aufteilen:
 
-- *Gruppe A*: Nicht-KI-Gruppe #linebreak()
+- *CG*: Nicht-KI-Gruppe #linebreak()
   Die Studierenden werden dazu aufgefordert, keine KI-Tools zu verwenden. Sie bekommen ein normales Tutorium. Das heißt, dass ich sie bei Problemen in der Lösungsfindung unterstütze und Erläuterungen zur Aufgabenstellung biete. Von mir gibt es keine konkreten Lösungen. Ich werde die Studierenden mit Tipps und Hinweisen in Richtung einer möglichen Lösung lenken. Diese Richtungsweisungen werden so klein wie möglich sein, dass die Studierenden die Lösung selbst finden können. #linebreak()
   Da es sich um das erste Semester handelt und ich nicht von Vorwissen ausgehen kann, werde ich die Studierenden aufklären, welche Tools sie aufgrund der KI-Funktionalität nicht verwenden sollen. Ich kann allerdings nicht verhindern, dass die Studierenden KI-basierte Tools verwenden, wenn ich nicht dabei bin.
-- *Gruppe B*: KI-Tutor #linebreak()
+- *EG*: KI-Tutor #linebreak()
   Die Studierenden werden dazu aufgefordert, beim Lernen mit KI zu arbeiten. Das heißt im Detail, dass Chatbots wie Claude für Verständnisfragen genutzt werden sollen. Der Chatbot wird so konfiguriert, dass er sich wie ein Tutor verhält und die Studierenden an die Hand nimmt aber keine konkrete Lösung ausgibt. #linebreak()
   Damit es nicht daran scheitert, dass die Studierenden keine KI-Tools kennen, oder nicht wissen, wie sie diese verwenden sollen, bekommen sie von mir eine Einführung und Unterstützung bei der Verwendung. Für Tests/Klausuren, dürfen keine KI-Tools verwendet werden. Das dient dazu, das Ergebnis der Studie "Generative AI Can Harm Learning" @bastani2024generative zu verifizieren, bei der festgestellt wurde, dass die Nutzung von KI eine kurzzeitige Verbesserung des Lernerfolgs bewirkt, sobald die KI-Tools deaktiviert werden, fielen die Testpersonen jedoch hinter die Kontrollgruppe zurück.
 
@@ -69,7 +79,7 @@ Die Teilnahme an der Studie ist freiwillig für alle Studierenden des Studiengan
 
 == Gruppenzuteilung
 
-Zu Beginn des Semesters werden alle Studierenden gefragt, wer Interesse an der Teilnahme an der Studie hat. Sie werden über das Ziel der Studie und die Gruppen informiert. Die Studierenden, die teilnehmen möchten, werden einen Fragebogen ausfüllen, in dem sie Ihre Haltung zum Thema KI im allgemeinen, sowie ihre Vorerfahrung in der Software-Entwicklung angeben. Anhand dieser Angaben werde ich die Studierenden so in die Gruppen einteilen, dass die angegebenen Faktoren gleichmäßig verteilt sind.
+Zu Beginn des Semesters werden alle Studierenden gefragt, wer Interesse an der Teilnahme an der Studie hat. Sie werden über das Ziel der Studie und die Gruppen informiert. Die Gruppenzuteilung erfolgt so, dass die Gruppen möglichst gleichmäßig in Bezug auf die Bewertung der bisherigen Abgaben verteilt sind.
 
 == Verwendete Tools
 
@@ -88,6 +98,8 @@ Nach meiner persönlichen Erfahrung ist Claude am besten als Tutor geeignet, da 
 
 == Datenerhebung
 
+=== Messung
+
 + Der Lernerfolg wird anhand der Bewertung der Aufgaben gemessen. Hier möchte ich Selbsteinschätzungen der Studierenden vermeiden, da diese inakkurat ist. Die Bewertung erfolgt über uns Tutoren. Wir bekommen eine Beispiel-Lösung vom Professor und besprechen untereinander, was wir als korrekt ansehen und was nicht. Ein Tutor übernimmt die Bewertung einer Teilaufgabe vollständig (für alle Studierenden), um eine Vergleichbarkeit zu gewährleisten.
 + Der Umgang mit dem Tutor und der KI wird über Beobachtung ermittelt. Ich selbst beobachte die Studierenden, während sie mit den KIs arbeiten. Mein Kollege wird die Studierenden beobachten, die mit mir als Tutor interagieren. Diese Beobachtungen werden in einem Protokoll festgehalten. Folgende Fragen sind in diesem Protokoll zu beantworten:
   - Wie präzise formulieren die Studierenden ihre Fragen?
@@ -103,6 +115,12 @@ Nach meiner persönlichen Erfahrung ist Claude am besten als Tutor geeignet, da 
   - Ich fühle mich sicher eine ähnliche Aufgabe ohne Hilfe lösen zu können (1-5).
   - Sonstige Anmerkungen (Freitextfeld).
   Die Messung des tatsächlichen Lernerfolgs erfolgt durch die Bewertung der Abgaben.
+
+=== Auswertung
+
++ Bewertung der Aufgaben als Lernerfolg: Alle Aufgaben werden von mir und meinem Kollegen bewertet. Ein Tutor übernimmt eine oder mehr Aufgaben komplett, damit alle Studierenden gleich behandelt werden. Ich betrachte die erzielten Punkte und deren Entwicklung über die Zeit des Semesters. Dabei betrachte ich die einzelnen Studierenden und den Median der jeweiligen Gruppe.
++ Beobachtung des Umgangs mit dem Tutor und der KI: Die Beobachtungen werden in einem Protokoll festgehalten und ausgewertet. Dabei achte ich auf Auffälligkeiten und Unterschiede zwischen den Gruppen. Hier gibt es keine konkreten Zahlen, sondern nur qualitative Aussagen.
++ Selbsteinschätzung der Studierenden: Die Selbsteinschätzung wird in einem Fragebogen erfasst und ausgewertet. Dabei achte ich auf Auffälligkeiten und Unterschiede zwischen den Gruppen. Hier gibt es keine konkreten Zahlen, sondern nur qualitative Aussagen. Hierbei geht es mir vor allem darum, ob EG Studierende sich als besser einschätzen, als sie tatsächlich sind. Das ist eine Beobachtung, die ich bei meinen Kommilitonen gemacht habe und die ich überprüfen möchte.
 
 == Aufgaben
 
