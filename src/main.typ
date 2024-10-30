@@ -58,7 +58,7 @@ Ich veranstalte ein Tutorium, das eine zusätzliche Veranstaltung zur Vorlesung 
 
 == Forschungsdesign
 
-In dieser Studie wurde ein quasi-experimentelles Design verwendet, an dem zwei Gruppen von Studenten beteiligt waren: Kontrollgruppe (CG) und Experimentalgruppe (EG).
+In dieser Studie wurde ein quasi-experimentelles Design verwendet, an dem zwei Gruppen von Studenten beteiligt waren: Kontrollgruppe (KG) und Experimentalgruppe (EG).
 
 Beide Gruppen wurden aus den Studierenden der Vorlesung Interaktive Programme zusammengestell.
 
@@ -66,7 +66,7 @@ Beide Gruppen wurden aus den Studierenden der Vorlesung Interaktive Programme zu
 
 Die Studierenden werde ich in zwei Gruppen aufteilen:
 
-- *CG*: Nicht-KI-Gruppe #linebreak()
+- *KG*: Nicht-KI-Gruppe #linebreak()
   Die Studierenden werden dazu aufgefordert, keine KI-Tools zu verwenden. Sie bekommen ein normales Tutorium. Das heißt, dass ich sie bei Problemen in der Lösungsfindung unterstütze und Erläuterungen zur Aufgabenstellung biete. Von mir gibt es keine konkreten Lösungen. Ich werde die Studierenden mit Tipps und Hinweisen in Richtung einer möglichen Lösung lenken. Diese Richtungsweisungen werden so klein wie möglich sein, dass die Studierenden die Lösung selbst finden können. #linebreak()
   Da es sich um das erste Semester handelt und ich nicht von Vorwissen ausgehen kann, werde ich die Studierenden aufklären, welche Tools sie aufgrund der KI-Funktionalität nicht verwenden sollen. Ich kann allerdings nicht verhindern, dass die Studierenden KI-basierte Tools verwenden, wenn ich nicht dabei bin.
 - *EG*: KI-Tutor #linebreak()
