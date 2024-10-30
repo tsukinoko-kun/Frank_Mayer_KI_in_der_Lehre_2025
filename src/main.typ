@@ -118,7 +118,7 @@ Nach meiner persönlichen Erfahrung ist Claude am besten als Tutor geeignet, da 
 
 === Auswertung
 
-+ Bewertung der Aufgaben als Lernerfolg: Alle Aufgaben werden von mir und meinem Kollegen bewertet. Ein Tutor übernimmt eine oder mehr Aufgaben komplett, damit alle Studierenden gleich behandelt werden. Ich betrachte die erzielten Punkte und deren Entwicklung über die Zeit des Semesters. Dabei betrachte ich die einzelnen Studierenden und den Median der jeweiligen Gruppe.
++ Bewertung der Aufgaben als Lernerfolg: Alle Aufgaben werden von mir und meinem Kollegen bewertet. Ein Tutor übernimmt eine oder mehr Aufgaben komplett, damit alle Studierenden gleich behandelt werden. Ich betrachte die erzielten Punkte und deren Entwicklung über die Zeit des Semesters. Dabei betrachte ich die einzelnen Studierenden sowie den Median und den Durchschnitt der jeweiligen Gruppe.
 + Beobachtung des Umgangs mit dem Tutor und der KI: Die Beobachtungen werden in einem Protokoll festgehalten und ausgewertet. Dabei achte ich auf Auffälligkeiten und Unterschiede zwischen den Gruppen. Hier gibt es keine konkreten Zahlen, sondern nur qualitative Aussagen.
 + Selbsteinschätzung der Studierenden: Die Selbsteinschätzung wird in einem Fragebogen erfasst und ausgewertet. Dabei achte ich auf Auffälligkeiten und Unterschiede zwischen den Gruppen. Hier gibt es keine konkreten Zahlen, sondern nur qualitative Aussagen. Hierbei geht es mir vor allem darum, ob EG Studierende sich als besser einschätzen, als sie tatsächlich sind. Das ist eine Beobachtung, die ich bei meinen Kommilitonen gemacht habe und die ich überprüfen möchte.
 
