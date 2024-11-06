@@ -12,3 +12,31 @@ bastani2024generative:
   parent:
     type: Periodical
     title: Available at SSRN 4895486
+baillifard2024effective:
+  type: Article
+  title: 'Effective learning with a personal AI tutor: A case study'
+  author:
+    - Baillifard, Ambroise
+    - Gabella, Maxime
+    - Lavenex, Pamela Banta
+    - Martarelli, Corinna S
+  page-range: 1-16
+  date: 2024
+  parent:
+    type: Periodical
+    title: Education and Information Technologies
+    parent:
+      type: Periodical
+      title: Springer
+kim2020individualized:
+  type: Article
+  title: Individualized AI tutor based on developmental learning networks
+  author:
+    - Kim, Woo-Hyun
+    - Kim, Jong-Hwan
+  year: 2020
+  parent:
+    title: IEEE Access
+    volume: 8
+    publisher: IEEE
+    type: Periodical

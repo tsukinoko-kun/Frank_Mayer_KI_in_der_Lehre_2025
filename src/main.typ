@@ -1,4 +1,4 @@
-#import "@preview/charged-ieee:0.1.0": ieee
+#import "@preview/charged-ieee:0.1.3": ieee
 
 #show: ieee.with(
   title: [Wie wirkt sich die Verwendung von KI auf den Lernerfolg von Software-Engineering-Studenten aus?],
@@ -30,13 +30,17 @@
 
 = Einführung
 
-Für das Lernen geeignete, KI-basierte Tools sind recht neu. Einige Studierende verwenden sie, der Umgang unter Lehrenden variiert. Ich möchte herausfinden, ob und unter welchen Bedingungen KI-basierte Tools einen positiven Effekt auf den Lernerfolg von Software-Engineering-Studierenden haben.
+Für das Lernen geeignete, KI-basierte Tools sind recht neu. Ziel dieser Arbeit ist es herauszufinden, ob und unter welchen Bedingungen KI-basierte Tools einen positiven Effekt auf den Lernerfolg von Software-Engineering-Studierenden haben.
 
 Ich sehe die Notwendigkeit, das Thema zu untersuchen, da ich selbst Software-Engineering studiere und einige Kommilitonen habe, die Tools wie ChatGPT verwenden, um sich die Arbeit zu erleichtern. Was ich dabei beobachte, ist besorgniserregend: falsche Informationen, kein Hinterfragen der Ergebnisse und kein Bewusstsein für den eigenen Lernprozess und Kenntnisstand.
 
 Da stelle ich mir die Frage, ob das am Tool selbst oder an der Art und Weise liegt, wie die Studierenden damit umgehen.
 
 Mir geht es also darum, herauszufinden, wie wir in der Lehre für Software-Engineering mit den KI-Tools umgehen sollten, um für die Studierenden eine optimale Ausbildung zu gewährleisten. Ob KI für die tägliche Arbeit von Software-Entwicklern geeignet ist, ist ein anderes Thema und wird hier nicht berücksichtigt.
+
+Eine Forschung zeigt, dass der Einsatz eines personalisierten KI-Tutors, der auf Lernstrategien wie Abstandslernen und gezielte Wiederholung setzt, die Lernleistungen von Studierenden signifikant steigern kann, was in einer Studie an der UniDistance Suisse zu einer um bis zu 15 Perzentilpunkte höheren Durchschnittsnote führte. @baillifard2024effective
+
+Eine andere Forschung zeigt, dass ein individuell angepasstes KI-Tutorsystem, das auf drei Developmental Learning Networks (DLNs) basiert und in einer mobilen App zur Koreanisch-Sprachvermittlung für Kinder implementiert ist, effektiv dabei hilft, Lernstatus und -präferenzen kontinuierlich zu erfassen und so den Lernfortschritt der Kinder zu fördern. @kim2020individualized
 
 = Forschungsfragen
 
@@ -52,7 +56,7 @@ Wie beeinflusst der Einsatz von KI-basierten Tools den Lernerfolg von Studierend
 
 == Setting
 
-Als Tutor für die Vorlesung Interaktive Programme an der Hochschule Heilbronn (das ist die erste Programmierveranstaltung im Studium Software Engineering Bachelor), habe ich die Möglichkeit, die Studierenden gezielt mit und ohne KI-Tools lernen zu lassen.
+Mein Versuch findet in der Vorlesung "Interaktive Programme" an der Hochschule Heilbronn (Programmiervorlesung im ersten Semester Software Engineering Bachelor) statt, hier werden die Studierenden gezielt mit und ohne KI-Tools lernen.
 
 Ich veranstalte ein Tutorium, das eine zusätzliche Veranstaltung zur Vorlesung darstellt. Die Teilnahme ist freiwillig, wird aber vom Professor der Veranstaltung empfohlen. Besonders den Studenten, die Schwierigkeiten haben, wird die Teilnahme nahegelegt.
 
