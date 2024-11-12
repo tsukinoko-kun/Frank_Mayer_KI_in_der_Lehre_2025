@@ -2,7 +2,7 @@ name: Deploy static content to Pages
 
 on:
   push:
-    branches: 
+    branches:
       - main
   workflow_dispatch:
 
@@ -33,7 +33,7 @@ jobs:
       - name: Move PDF to dist directory
         run: |
           mkdir -p ./dist
-          mv ./src/main.pdf ./dist/Frank_Mayer_KI_in_der_Lehre_2024.pdf
+          mv ./src/main.pdf ./dist/Frank_Mayer_KI_in_der_Lehre_2025.pdf
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
