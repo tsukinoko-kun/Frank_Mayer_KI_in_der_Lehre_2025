@@ -2,18 +2,36 @@
 
 #show: ieee.with(
   title: [Wie wirkt sich die Verwendung von KI auf den Lernerfolg von Software-Engineering-Studenten aus?],
-  // abstract: [
-  // ],
+  abstract: [
+    In jüngster Zeit gewinnen KI-gestützte Tools zunehmend an Bedeutung im Bildungsbereich, wobei ihr Einsatzpotenzial für das Lernen von Software-Engineering-Studierenden bisher unzureichend erforscht ist. Diese Arbeit untersucht, ob und unter welchen Bedingungen KI-basierte Tools den Lernerfolg von Studierenden in Software-Engineering-Kursen positiv beeinflussen können.
+
+    Der Untersuchungsrahmen ist die Lehrveranstaltung "Interaktive Programme" im ersten Semester des Studiengangs Software Engineering an der Hochschule Heilbronn. In einem quasi-experimentellen Design werden zwei Gruppen von Studierenden miteinander verglichen: eine Kontrollgruppe ohne Einsatz von KI-Tools und eine Experimentalgruppe, die spezifisch auf KI-gestützte Tutorien zurückgreifen soll. Neben der Bewertung der Aufgabenlösungen werden qualitative Beobachtungen und Selbsteinschätzungen der Studierenden genutzt, um den Einfluss der KI-Tools auf Lernerfolg, Motivation und Selbsteinschätzung zu analysieren.
+
+    Die Ergebnisse dieser Studie sollen Hinweise darauf geben, wie KI-Tools im Kontext der Hochschullehre sinnvoll integriert werden können, um den Lernerfolg langfristig zu fördern, ohne das eigenständige Lernen der Studierenden zu beeinträchtigen.
+
+  ],
   authors: (
     (
       name: "Frank Mayer",
       department: [Software Engineering],
       organization: [Hochschule Heilbronn],
       location: [Heilbronn, Deutschland],
-      email: "fmayer2@stud.hs-heilbronn.de"
+      email: "fmayer2@stud.hs-heilbronn.de",
     ),
   ),
-  index-terms: ("Learning", "Artificial intelligence", "Software engineering", "Software tools", "Software engineering education", "Software engineering students", "Software engineering bachelor", "Generative AI", "Learning effectiveness", "Learning outcomes", "Learning process", "Learning tools", "Learning strategies", "Learning methods", "Learning environments", "Learning experiences"),
+  index-terms: (
+    "Artificial Intelligence in Education",
+    "Generative AI",
+    "Higher Education",
+    "Software Engineering Education",
+    "Learning Outcomes",
+    "Self-assessment",
+    "Tutoring Systems",
+    "Quasi-experimental Design",
+    "Qualitative Observation",
+    "Educational Technology",
+    "Student Motivation",
+  ),
   bibliography: bibliography("refs.yaml"),
 )
 
