@@ -3,6 +3,8 @@
 #let color-orage-400 = rgb("#FF8904")
 #let color-sky-400 = rgb("#00BCFF")
 
+// #set par.line(numbering: "1")
+
 #show: ieee.with(
   title: [Wie wirkt sich die Verwendung von KI auf den Lernerfolg von Software-Engineering-Studenten aus?],
   abstract: [
@@ -35,7 +37,7 @@
     "Educational Technology",
     "Student Motivation",
   ),
-  bibliography: bibliography("refs.yaml"),
+  bibliography: bibliography("refs.yaml", title: [Verweise]),
 )
 
 = Einführung
@@ -149,15 +151,16 @@ _wird ergänzt wenn bekannt_
 
 == Wenige Daten
 
-Es haben wenige Studierende teilgenommen. Von den wenigen Teilnehmern waren nochmal weniger regelmäßig im Tutorium.
-Durchschnittlich haben 10 Studierende das Tutorium besucht, wovon 6 am Versuch teilgenommen haben.
-Dementsprechend ungenau sind die Daten.
+Die Anzahl der Studierenden, die an der Untersuchung teilnahmen, war gering. Unter den wenigen Teilnehmenden war die regelmäßige Teilnahme am Tutorium noch seltener zu verzeichnen.
+Im Durchschnitt besuchten 10 Studierende das Tutorium, von denen 6 am Versuch partizipierten.
+Folglich ist die Genauigkeit der erhobenen Daten als eingeschränkt zu bewerten.
 
 == Daten
 
 === Selbsteinschätzungen
 
-Hier sind die Ergebnisse der selbsteinschätzungen der Studierenden, getrennt nach den Gruppen #text(fill: color-sky-400)[KG] und #text(fill: color-orage-400)[EG].
+Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden dargestellt, differenziert nach den Gruppen #text(fill: color-sky-400)[KG] und #text(fill: color-orage-400)[EG].
+Aufgrund der geringen Gruppengrößen wird stets der Durchschnittswert angegeben.
 
 #{
   let x_axis = plotst.axis(
@@ -419,3 +422,116 @@ Anfangs war die Kommunikation weniger effizient, jedoch zeigte sich im Verlauf e
 
 In der ersten Woche agierten die Studierenden noch zurückhaltend.
 Sie vertrauten sich den Tutoren schneller an als dem Dozenten, was dazu führte, dass sie vermehrt sowohl initiale als auch Folgefragen stellten.
+
+=== Bewertungen
+
+Im Verlauf des Semesters wird ein systematischer Vergleich der Punktzahlen der beiden Gruppen #text(fill: color-sky-400)[KG] und #text(fill: color-orage-400)[EG] vorgenommen.
+Da die Aufgaben mit unterschiedlich vielen Punkten bewertet wurden, wird der prozentuale Anteil der erreichten Punkte als Vergleichsmaßstab herangezogen.
+Zudem erfolgt die Berechnung des Durchschnitts innerhalb der jeweiligen Gruppen.
+
+#figure(
+  [
+    #{
+      let x_axis_tasks = plotst.axis(
+        values: (
+          "",
+          "06.10",
+          "07.10",
+          "13.10",
+          "14.10",
+          "21.10",
+          "27.10",
+          "28.10",
+          "03.11",
+          "04.11",
+          "10.11",
+          "11.11",
+          "02.12",
+          "08.12",
+          "09.12",
+          "15.12",
+          "16.12",
+          "04.01",
+        ),
+        title: "Datum der Abgabe",
+        location: "bottom",
+        show_markings: false,
+      )
+      let y_axis = plotst.axis(
+        min: 0,
+        max: 101,
+        step: 25,
+        location: "left",
+        title: "Erreichte Punkte in %",
+        show_markings: true,
+        helper_lines: true,
+      )
+
+      plotst.overlay(
+        (
+          plotst.graph_plot(
+            plotst.plot(
+              axes: (x_axis_tasks, y_axis),
+              data: (
+                ("06.10", 88),
+                ("07.10", 50),
+                ("13.10", 94),
+                ("14.10", 95),
+                ("21.10", 70),
+                ("27.10", 90),
+                ("28.10", 66),
+                ("03.11", 83),
+                ("04.11", 50),
+                ("10.11", 100),
+                ("11.11", 75),
+                ("02.12", 91),
+                ("08.12", 72),
+                ("09.12", 84),
+                ("15.12", 88),
+                ("16.12", 100),
+                ("04.01", 100),
+              ),
+            ),
+            (100%, 100%),
+            stroke: color-orage-400,
+            caption: "Auswertung - Noten",
+          ),
+          plotst.graph_plot(
+            plotst.plot(
+              axes: (x_axis_tasks, y_axis),
+              data: (
+                ("06.10", 52),
+                ("07.10", 53),
+                ("13.10", 58),
+                ("14.10", 93),
+                ("21.10", 57),
+                ("27.10", 83),
+                ("28.10", 74),
+                ("03.11", 94),
+                ("04.11", 67),
+                ("10.11", 75),
+                ("11.11", 100),
+                ("02.12", 85),
+                ("08.12", 77),
+                ("09.12", 89),
+                ("15.12", 93),
+                ("16.12", 89),
+                ("04.01", 88),
+              ),
+            ),
+            (100%, 100%),
+            stroke: color-sky-400,
+          ),
+        ),
+        (100%, 20%),
+      )
+    }
+  ],
+  scope: "parent",
+  placement: top,
+)
+
+#outline(
+  title: [Abbildungsverzeichnis],
+  target: figure,
+)
