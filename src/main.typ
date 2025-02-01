@@ -527,7 +527,15 @@ Zudem erfolgt die Berechnung des Durchschnitts innerhalb der jeweiligen Gruppen.
 
 = Diskussion
 
-_wird ergänzt_
+Die vorliegende Untersuchung weist mehrere methodische Limitationen auf, die bei der Interpretation der Ergebnisse sorgfältig berücksichtigt werden müssen. Ein zentraler Kritikpunkt betrifft die geringe Anzahl der teilnehmenden Studierenden, wodurch die statistische Aussagekraft des Versuchs erheblich eingeschränkt wird. Obwohl aus den Selbsteinschätzungen eine Tendenz erkennbar ist, wonach die Kontrollgruppe (KG) eine moderat bessere Lernerfahrung verzeichnete als die Experimentalgruppe (EG), ist aufgrund der kleinen Stichprobe keine belastbare Generalisierung möglich.
+
+Ein weiteres Problem stellt die unzuverlässige Ausfüllung des Fragebogens dar. Die Inkonsistenzen in den Rückmeldungen der Teilnehmenden werfen erhebliche Zweifel an der Validität der erhobenen Selbsteinschätzungsdaten auf. Es ist daher anzunehmen, dass methodische Schwächen in der Datenerhebung einen Einfluss auf die ermittelten Ergebnisse hatten.
+
+Während des Versuchs wurde bewusst darauf verzichtet, frühzeitig in die Ergebnisse zu schauen, um eine Beeinflussung der Versuchsteilnehmenden zu vermeiden. Rückblickend hätte eine zeitnahe Kontrolle der Daten ermöglicht, den Teilnehmenden eine intensivere Aufforderung zum regelmäßigen Ausfüllen des Fragebogens zu geben. Dennoch stand für mich stets die Lernförderung der Studierenden im Vordergrund, wodurch die Datenerhebung in manchen Aspekten nachrangig behandelt wurde.
+
+Zudem erwies es sich als herausfordernd, bereits zu Beginn der Studie präzise zu definieren, welche Daten letztlich für eine aussagekräftige Auswertung benötigt würden. Diese retrospektive Erkenntnis unterstreicht die Notwendigkeit einer detaillierteren Planung der Datenerhebung in zukünftigen Studien, um methodische Unklarheiten von vornherein zu vermeiden.
+
+Zusammenfassend liefert die vorliegende Arbeit trotz positiver Tendenzen in den Selbsteinschätzungen wichtige methodische Erkenntnisse, die als Grundlage für weiterführende Untersuchungen zum Einsatz von KI-Tools im Bildungsbereich dienen können. Für zukünftige Studien wird empfohlen, eine größere Stichprobe zu verwenden und die Datenerhebung konsequenter zu gestalten, um robuste und generalisierbare Ergebnisse zu erzielen.
 
 #outline(
   title: [Abbildungsverzeichnis],
