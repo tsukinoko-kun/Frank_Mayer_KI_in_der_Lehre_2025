@@ -3,7 +3,7 @@
 #let color-orage-400 = rgb("#FF8904")
 #let color-sky-400 = rgb("#00BCFF")
 
-// #set par.line(numbering: "1")
+#set par.line(numbering: "1")
 
 #show: ieee.with(
   title: [Wie wirkt sich die Verwendung von KI auf den Lernerfolg von Software-Engineering-Studenten aus?],
@@ -68,63 +68,60 @@ Inwiefern beeinflusst der Einsatz KI-basierter Tools den Lernerfolg von Studiere
 
 == Setting
 
-Die Untersuchung wird im Rahmen der Vorlesung "Interaktive Programme" an der Hochschule Heilbronn durchgeführt. Diese Vorlesung ist Teil des ersten Semesters des Bachelorstudiengangs Software Engineering und vermittelt grundlegende Programmierkenntnisse. Im Rahmen der Studie werden die Studierenden gezielt sowohl mit als auch ohne KI-basierte Tools lernen.
+Die vorliegende Untersuchung wird im Rahmen der Vorlesung "Interaktive Programme" an der Hochschule Heilbronn durchgeführt. Diese Vorlesung ist Bestandteil des ersten Semesters im Bachelorstudiengang Software Engineering und vermittelt elementare Programmierkenntnisse. Im Zuge der Studie erproben die Studierenden gezielt Lernprozesse sowohl unter Einsatz als auch ohne Einsatz von KI-basierten Tools.
 
-Zusätzlich zur Vorlesung wird ein Tutorium angeboten, das als ergänzende Veranstaltung dient. Die Teilnahme am Tutorium ist freiwillig, wird jedoch von der Lehrperson besonders den Studierenden empfohlen, die Schwierigkeiten mit den Lerninhalten haben.
+Ergänzend zur Vorlesung wird ein Tutorium als Zusatzveranstaltung angeboten. Die Teilnahme an diesem Tutorium erfolgt auf freiwilliger Basis, wird jedoch insbesondere den Studierenden nahegelegt, die Schwierigkeiten bei der Aneignung der Lehrinhalte aufweisen.
 
 == Forschungsdesign
 
-Für diese Studie wird ein quasi-experimentelles Design verwendet, bei dem zwei Gruppen von Studierenden untersucht werden: eine Kontrollgruppe (KG) und eine Experimentalgruppe (EG).
+Für die vorliegende Studie wird ein quasi-experimentelles Design verwendet, bei dem zwei Gruppen von Studierenden untersucht werden: eine Kontrollgruppe (KG) und eine Experimentalgruppe (EG).
 
-Beide Gruppen werden aus den Teilnehmenden der Vorlesung "Interaktive Programme" zusammengestellt.
+Beide Gruppen setzen sich aus den Teilnehmenden der Vorlesung "Interaktive Programme" zusammen.
 
 == Gruppen
 
-Die Studierenden werden in zwei Gruppen aufgeteilt:
+Die Studierenden werden in zwei Gruppen untergliedert:
 
 - *KG*: Nicht-KI-Gruppe #linebreak()
-  Die Studierenden in der Kontrollgruppe werden dazu angehalten, keine KI-Tools zu verwenden. Sie erhalten ein traditionelles Tutorium, in dem ich sie bei der Problemlösung unterstütze und ihnen Erklärungen zur Aufgabenstellung biete, ohne konkrete Lösungen zu geben. Stattdessen erhalten sie kleine Hinweise, die sie in Richtung einer möglichen Lösung führen, sodass sie die Lösung eigenständig erarbeiten können. #linebreak()
-  Da die Studierenden im ersten Semester keine umfangreichen Vorkenntnisse mitbringen, werde ich sie über KI-basierte Tools informieren und auf Tools hinweisen, die aufgrund ihrer Funktionalität nicht verwendet werden sollten. Ich kann jedoch nicht vollständig verhindern, dass Studierende außerhalb des Tutoriums dennoch auf KI-Tools zurückgreifen.
+  Die Studierenden in der Kontrollgruppe werden instruiert, auf den Einsatz von KI-Tools zu verzichten. Sie nehmen an einem traditionellen Tutorium teil, in dem ich sie bei der Problemlösung unterstütze und Erklärungen zur Aufgabenstellung bereitstelle, ohne konkrete Lösungsansätze zu offerieren. Stattdessen erhalten sie dezente Hinweise, die sie in Richtung einer möglichen Lösung anleiten, sodass sie diese eigenständig erarbeiten können. #linebreak()
+  Da die Studierenden im ersten Semester über begrenzte Vorkenntnisse verfügen, erfolgt eine gezielte Information über KI-basierte Tools sowie eine Empfehlung, welche Tools aufgrund ihrer spezifischen Funktionalität nicht eingesetzt werden sollten. Es kann jedoch nicht vollständig verhindert werden, dass Studierende außerhalb des Tutoriums dennoch auf KI-Tools zurückgreifen.
 
 - *EG*: KI-Tutor-Gruppe #linebreak()
-  Die Studierenden in der Experimentalgruppe werden dazu ermutigt, KI-gestützte Tools zur Unterstützung ihres Lernprozesses zu nutzen. Konkret sollen Chatbots wie Claude für Verständnisfragen herangezogen werden. Der Chatbot wird so konfiguriert, dass er sich wie ein Tutor verhält, der die Studierenden durch den Lösungsweg führt, ohne konkrete Lösungen zu liefern. #linebreak()
-  Um sicherzustellen, dass die Studierenden die KI-Tools effizient einsetzen können, erhalten sie von mir eine Einführung und Unterstützung bei deren Anwendung. Während Tests und Klausuren ist die Nutzung von KI-Tools untersagt. Diese Einschränkung soll auch dazu beitragen, die Ergebnisse der Studie "Generative AI Can Harm Learning" @bastani2024generative zu überprüfen, die zeigt, dass die Nutzung von KI-Tools kurzfristig zu Lernfortschritten führen kann, jedoch im Anschluss, ohne KI-Unterstützung, zu Leistungseinbußen im Vergleich zur Kontrollgruppe.
+  Die Studierenden in der Experimentalgruppe werden ermutigt, KI-gestützte Tools zur Unterstützung ihres Lernprozesses zu verwenden. Konkret sollen Chatbots wie Claude für Verständnisfragen herangezogen werden. Der Chatbot wird dahingehend konfiguriert, dass er als tutorielle Instanz agiert, welche die Studierenden schrittweise durch den Lösungsweg führt, ohne dabei konkrete Lösungsansätze zu liefern. #linebreak()
+  Um sicherzustellen, dass die Studierenden die KI-Tools effizient einsetzen können, erhalten sie von mir eine ausführliche Einführung sowie Unterstützung bei deren Anwendung. Während Prüfungen, wie Tests und Klausuren, ist der Einsatz von KI-Tools untersagt. Diese Restriktion dient zugleich der Überprüfung der Ergebnisse der Studie "Generative AI Can Harm Learning" @bastani2024generative, welche darlegt, dass der Einsatz von KI-Tools zwar kurzfristig zu Lernfortschritten führen kann, jedoch im anschließenden, KI-unabhängigen Betrieb zu Leistungseinbußen im Vergleich zur Kontrollgruppe führt.
 
-Die Aufgaben stammen regulär aus der Vorlesung und werden unverändert übernommen. Die Bewertung erfolgt unabhängig von der Gruppenzugehörigkeit.
+Die Aufgabenstellungen entstammen der regulären Vorlesung und werden unverändert übernommen. Die Bewertung erfolgt dabei unabhängig von der Gruppenzugehörigkeit.
 
-Die Teilnahme an der Studie steht allen Studierenden des Studiengangs Software Engineering, die die Vorlesung "Interaktive Programme" besuchen, offen und erfolgt auf freiwilliger Basis. Es werden keine Anreize zur Teilnahme angeboten.
+Die Teilnahme an der Studie steht sämtlichen Studierenden des Studiengangs Software Engineering, die an der Vorlesung "Interaktive Programme" partizipieren, uneingeschränkt und auf freiwilliger Basis offen. Es werden keinerlei Anreize zur Teilnahme gewährt.
 
 == Gruppenzuteilung
 
-Zu Beginn des Semesters werden alle Studierenden gefragt, ob sie an der Studie teilnehmen möchten. Sie werden über das Ziel der Studie sowie die Zusammensetzung der Gruppen informiert. Die Zuteilung zu den Gruppen erfolgt unter Berücksichtigung der bisherigen Leistungsbewertung, sodass die Gruppen möglichst gleichmäßig verteilt sind.
+Zu Beginn des Semesters werden alle Studierenden um ihre freiwillige Teilnahme an der Studie gebeten. Im Zuge dessen erhalten sie detaillierte Informationen über das Ziel der Untersuchung sowie über die Zusammensetzung der Gruppen. Die Zuteilung zu den Gruppen erfolgt unter Berücksichtigung der bisherigen Leistungsbewertung, um eine möglichst gleichmäßige Verteilung zu gewährleisten.
 
 == Verwendete Tools
 
-Die Studierenden der Experimentalgruppe (EG) können frei wählen, welche KI-Tools sie verwenden möchten. Ich werde jedoch einige Tools empfehlen, die sich als geeignet erwiesen haben, und eine Einführung in deren Nutzung geben. Die empfohlenen Tools sind:
+Die Studierenden der Experimentalgruppe (EG) haben die Möglichkeit, eigenständig zu wählen, welche KI-Tools sie einsetzen möchten. Es werden jedoch einige Tools empfohlen, die sich in vorangegangenen Anwendungen als geeignet erwiesen haben, und es wird eine Einführung in deren Handhabung angeboten. Die empfohlenen Tools lauten:
 
 - *#link("https://claude.ai")[Claude]* #linebreak()
-  Ein auf Claude 3.5 Sonnet basierender Chatbot.
+  Ein Chatbot, der auf dem Claude 3.5 Sonnet basiert.
 - *#link("https://copilot.cloud.microsoft")[Microsoft Copilot]* #linebreak()
-  Ein auf dem GPT-4-Modell von OpenAI basierender Chatbot.
-  Der Zugriff ist über den Hochschulaccount kostenlos möglich.
+  Ein Chatbot, der auf dem GPT-4-Modell von OpenAI basiert.
+  Der Zugriff erfolgt kostenfrei über den Hochschulaccount.
 - *#link("https://chat.openai.com")[ChatGPT]* #linebreak()
-  Ein Chatbot basierend auf OpenAI's GPT-4o und GPT-4o mini Modellen.
-  Der Zugang ist ebenfalls über den Hochschulaccount kostenlos verfügbar.
+  Ein Chatbot, der auf den GPT-4o- und GPT-4o mini-Modellen von OpenAI basiert.
 
-Auf Grundlage meiner persönlichen Erfahrungen eignet sich Claude besonders gut als Tutor, da dieses LLM versucht, die Ursache eines Problems zu identifizieren, bevor es Lösungsvorschläge anbietet. GPT hingegen generiert sofort Lösungsvorschläge, die oft nicht auf das eigentliche Problem eingehen, wenn es nicht zuvor klar vom Nutzer formuliert wurde.
+Auf Grundlage meiner persönlichen Erfahrungen erweist sich Claude als besonders geeignet als tutorielle Unterstützung, da dieses LLM zunächst versucht, die ursächlichen Probleme zu identifizieren, bevor Lösungsvorschläge unterbreitet werden. Im Gegensatz dazu generiert GPT unmittelbar Lösungsvorschläge, die häufig nicht adäquat auf das zugrunde liegende Problem eingehen, sofern dieses nicht eindeutig vom Nutzer formuliert wurde. @parmarprompt
 
 == Datenerhebung
 
 === Messung
 
-+ Der Lernerfolg wird anhand der Bewertung der Aufgaben gemessen. Dabei wird bewusst auf Selbsteinschätzungen der Studierenden verzichtet, da diese oft unzuverlässig sind. Die Bewertung erfolgt durch uns Tutoren. Der Professor stellt eine Musterlösung zur Verfügung, und wir besprechen gemeinsame Bewertungsstandards. Jede Teilaufgabe wird vollständig von einem Tutor bewertet, um die Vergleichbarkeit zu gewährleisten.
-
-+ Der Umgang der Studierenden mit dem Tutor bzw. den KI-Tools wird durch gezielte Beobachtungen erhoben. Ich beobachte die Studierenden, die mit KI-Tools arbeiten, während mein Kollege die Studierenden beobachtet, die im Tutorium Unterstützung erhalten. Diese Beobachtungen werden in einem Protokoll festgehalten, das folgende Fragen enthält:
-  - Wie präzise formulieren die Studierenden ihre Fragen?
-  - Wie gut verstehen die Studierenden die Antworten des Tutors/der KI?
-  - Fragen die Studierenden nach, wenn sie die Antwort nicht verstanden haben? (sichtbares Nichtverstehen: z. B. Zögern bei der Umsetzung, Nachfrage bei Kommilitonen)
-
-+ Die Selbsteinschätzung der Studierenden wird mithilfe eines Fragebogens erhoben, der direkt die subjektive Wahrnehmung des eigenen Lernfortschritts, der Leistung, der Motivation und des Wissensstands erfasst. Der Fragebogen wird nach jedem Tutorium ausgefüllt und basiert auf einer Skala von 1 bis 5, wobei 1 für "stimme nicht zu" und 5 für "stimme voll zu" steht. Wenn ein Studierender am Tutorium nicht teilnimmt, entfällt auch die Selbsteinschätzung. Der Fragebogen enthält folgende Aussagen:
++ Der Lernerfolg wird anhand der Bewertung der Aufgaben quantifiziert. Hierbei wird bewusst auf Selbsteinschätzungen der Studierenden verzichtet, da diese oftmals als unzuverlässig gelten. Die Bewertung erfolgt durch die Tutoren. Der Professor stellt eine Musterlösung zur Verfügung, und es werden gemeinsame Bewertungsstandards definiert. Jede Teilaufgabe wird vollständig von einem Tutor bewertet, um die Vergleichbarkeit unter den Studierenden sicherzustellen.
++ Der Umgang der Studierenden mit dem Tutor beziehungsweise den KI-Tools wird durch gezielte Beobachtungen erhoben. Während ich die Studierenden beobachte, die mit KI-Tools arbeiten, übernimmt mein Kollege die Beobachtung jener, die im Tutorium Unterstützung von mir erhalten. Diese Beobachtungen werden in einem Protokoll dokumentiert, das folgende Fragestellungen beinhaltet:
+  - Inwieweit formulieren die Studierenden ihre Fragen präzise?
+  - Wie gut erfassen die Studierenden die Antworten des Tutors bzw. der KI?
+  - Wird bei Unklarheiten in den Antworten nachgefragt? (Indikatoren hierfür sind beispielsweise Zögern bei der Umsetzung oder Rückfragen bei Kommilitonen)
++ Die Selbsteinschätzung der Studierenden wird mithilfe eines Fragebogens erhoben, der die subjektive Wahrnehmung des eigenen Lernfortschritts, der erbrachten Leistung, der Motivation und des Wissensstands direkt erfasst. Der Fragebogen soll nach jedem Tutorium ausgefüllt werden und basiert auf einer fünfstufigen Likert-Skala, wobei 1 für "stimme nicht zu" und 5 für "stimme voll zu" steht. Bei Nichtteilnahme am Tutorium entfällt die Erhebung der Selbsteinschätzung. Dazu kommt, dass ich die Studierenden nur um das Ausfüllen bitten kann, sie können nicht dazu gezwungen werden. Der Fragebogen umfasst folgende Aussagen:
   - Die Aufgabenstellung war für mich ohne Hilfe verständlich (1-5).
   - Die Hilfestellung des Tutors/der KI war für mich hilfreich (1-5).
   - Ich konnte die Aufgabe ohne Hilfe lösen (1-5).
@@ -132,20 +129,17 @@ Auf Grundlage meiner persönlichen Erfahrungen eignet sich Claude besonders gut 
   - Den Antworten des Tutors/der KI habe ich vertraut (1-5).
   - Mein Wissensstand hat sich durch die Aufgabe verbessert (1-5).
   - Ich fühle mich sicher, eine ähnliche Aufgabe ohne Hilfe lösen zu können (1-5).
-  - Sonstige Anmerkungen (Freitextfeld).
-  Der tatsächliche Lernerfolg wird durch die Bewertung der abgegebenen Lösungen ermittelt.
+  Der tatsächliche Lernerfolg wird abschließend anhand der Bewertung der eingereichten Lösungen ermittelt.
 
 === Auswertung
 
-+ *Bewertung der Aufgaben als Maß für den Lernerfolg*: Alle Aufgaben werden von meinem Kollegen und mir bewertet. Jede Teilaufgabe wird dabei vollständig von einem Tutor bewertet, um eine einheitliche Bewertung zu gewährleisten. Die erzielten Punkte sowie ihre Entwicklung im Verlauf des Semesters werden sowohl auf individueller Basis als auch als Median und Durchschnitt innerhalb jeder Gruppe betrachtet.
-
-+ *Beobachtung des Umgangs mit dem Tutor und den KI-Tools*: Die in den Protokollen festgehaltenen Beobachtungen werden qualitativ ausgewertet, wobei besondere Auffälligkeiten und Unterschiede zwischen den Gruppen erfasst werden. Eine quantitative Auswertung ist hierbei nicht vorgesehen; stattdessen sollen aus den qualitativen Beobachtungen relevante Unterschiede und Gemeinsamkeiten abgeleitet werden.
-
-+ *Selbsteinschätzung der Studierenden*: Die Selbsteinschätzung wird anhand des Fragebogens erhoben und ebenfalls qualitativ ausgewertet. Besonderes Augenmerk liegt auf Unterschieden zwischen den Gruppen, insbesondere auf möglichen Überschätzungen in der Experimentalgruppe (EG). Diese Beobachtung basiert auf meinen bisherigen Erfahrungen und soll empirisch überprüft werden.
++ *Bewertung der Aufgaben als Indikator für den Lernerfolg*: Sämtliche Aufgaben werden von meinem Kollegen und mir bewertet. Jede Teilaufgabe wird hierbei vollständig von einem Tutor beurteilt, um eine konsistente Bewertung zu gewährleisten. Die erzielten Punkte sowie deren Entwicklung im Verlauf des Semesters werden sowohl auf individueller Basis als auch anhand von Median und Durchschnitt innerhalb der jeweiligen Gruppen analysiert.
++ *Beobachtung des Umgangs mit dem Tutor und den KI-Tools*: Die in den Protokollen dokumentierten Beobachtungen werden qualitativ ausgewertet, wobei insbesondere signifikante Auffälligkeiten und Unterschiede zwischen den Gruppen erfasst werden. Eine quantitative Auswertung ist in diesem Zusammenhang nicht vorgesehen; vielmehr sollen aus den qualitativen Daten relevante Unterschiede und Gemeinsamkeiten abgeleitet werden.
++ *Selbsteinschätzung der Studierenden*: Die Erhebung der Selbsteinschätzung erfolgt anhand des Fragebogens und wird ebenfalls qualitativ analysiert. Hierbei liegt besonderes Augenmerk auf Unterschieden zwischen den Gruppen, insbesondere hinsichtlich potenzieller Überschätzungen in der Experimentalgruppe (EG). Diese Beobachtungen beruhen auf meinen bisherigen Erfahrungen und sollen empirisch überprüft werden.
 
 == Aufgaben
 
-_wird ergänzt wenn bekannt_
+_wird noch ergänzt_
 
 = Auswertung
 
@@ -530,6 +524,10 @@ Zudem erfolgt die Berechnung des Durchschnitts innerhalb der jeweiligen Gruppen.
   scope: "parent",
   placement: top,
 )
+
+= Diskussion
+
+_wird ergänzt_
 
 #outline(
   title: [Abbildungsverzeichnis],
