@@ -1,3 +1,4 @@
+---
 bastani2024generative:
   type: Article
   title: Generative AI Can Harm Learning
@@ -39,4 +40,25 @@ kim2020individualized:
     title: IEEE Access
     volume: 8
     publisher: IEEE
+    type: Periodical
+parmarprompt:
+  type: Article
+  title: Prompt Engineering For Large Language Model
+  author:
+    - Parmar, Shivam
+    - Patel, Hemil
+tian2023chatgpt:
+  type: Article
+  title: Is ChatGPT the ultimate programming assistant--how far is it?
+  author:
+    - Tian, Haoye
+    - Lu, Weiqi
+    - Li, Tsz On
+    - Tang, Xunzhu
+    - Cheung, Shing-Chi
+    - Klein, Jacques
+    - Bissyandé, Tegawendé F.
+  date: 2023
+  parent:
+    title: arXiv preprint arXiv:2304.11938
     type: Periodical

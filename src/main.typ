@@ -1,4 +1,7 @@
 #import "@preview/charged-ieee:0.1.3": ieee
+#import "@preview/plotst:0.2.0"
+#let color-orage-400 = rgb("#FF8904")
+#let color-sky-400 = rgb("#00BCFF")
 
 #show: ieee.with(
   title: [Wie wirkt sich die Verwendung von KI auf den Lernerfolg von Software-Engineering-Studenten aus?],
@@ -35,17 +38,6 @@
   bibliography: bibliography("refs.yaml"),
 )
 
-#set text(font: "Times New Roman")
-#set text(lang: "de")
-#show heading: it => block(
-  breakable: false,
-  [
-    #v(0.5em)
-    #it
-    #v(0.3em)
-  ],
-)
-
 = Einführung
 
 KI-basierte Werkzeuge, die speziell für den Einsatz im Bildungsbereich geeignet sind, sind ein vergleichsweise neues Phänomen. Ziel dieser Arbeit ist es, zu untersuchen, ob und unter welchen Bedingungen KI-basierte Tools den Lernerfolg von Studierenden im Bereich Software Engineering fördern können.
@@ -74,7 +66,7 @@ Inwiefern beeinflusst der Einsatz KI-basierter Tools den Lernerfolg von Studiere
 
 == Setting
 
-Die Untersuchung wird im Rahmen der Vorlesung „Interaktive Programme“ an der Hochschule Heilbronn durchgeführt. Diese Vorlesung ist Teil des ersten Semesters des Bachelorstudiengangs Software Engineering und vermittelt grundlegende Programmierkenntnisse. Im Rahmen der Studie werden die Studierenden gezielt sowohl mit als auch ohne KI-basierte Tools lernen.
+Die Untersuchung wird im Rahmen der Vorlesung "Interaktive Programme" an der Hochschule Heilbronn durchgeführt. Diese Vorlesung ist Teil des ersten Semesters des Bachelorstudiengangs Software Engineering und vermittelt grundlegende Programmierkenntnisse. Im Rahmen der Studie werden die Studierenden gezielt sowohl mit als auch ohne KI-basierte Tools lernen.
 
 Zusätzlich zur Vorlesung wird ein Tutorium angeboten, das als ergänzende Veranstaltung dient. Die Teilnahme am Tutorium ist freiwillig, wird jedoch von der Lehrperson besonders den Studierenden empfohlen, die Schwierigkeiten mit den Lerninhalten haben.
 
@@ -82,7 +74,7 @@ Zusätzlich zur Vorlesung wird ein Tutorium angeboten, das als ergänzende Veran
 
 Für diese Studie wird ein quasi-experimentelles Design verwendet, bei dem zwei Gruppen von Studierenden untersucht werden: eine Kontrollgruppe (KG) und eine Experimentalgruppe (EG).
 
-Beide Gruppen werden aus den Teilnehmenden der Vorlesung „Interaktive Programme“ zusammengestellt.
+Beide Gruppen werden aus den Teilnehmenden der Vorlesung "Interaktive Programme" zusammengestellt.
 
 == Gruppen
 
@@ -94,11 +86,11 @@ Die Studierenden werden in zwei Gruppen aufgeteilt:
 
 - *EG*: KI-Tutor-Gruppe #linebreak()
   Die Studierenden in der Experimentalgruppe werden dazu ermutigt, KI-gestützte Tools zur Unterstützung ihres Lernprozesses zu nutzen. Konkret sollen Chatbots wie Claude für Verständnisfragen herangezogen werden. Der Chatbot wird so konfiguriert, dass er sich wie ein Tutor verhält, der die Studierenden durch den Lösungsweg führt, ohne konkrete Lösungen zu liefern. #linebreak()
-  Um sicherzustellen, dass die Studierenden die KI-Tools effizient einsetzen können, erhalten sie von mir eine Einführung und Unterstützung bei deren Anwendung. Während Tests und Klausuren ist die Nutzung von KI-Tools untersagt. Diese Einschränkung soll auch dazu beitragen, die Ergebnisse der Studie „Generative AI Can Harm Learning“ @bastani2024generative zu überprüfen, die zeigt, dass die Nutzung von KI-Tools kurzfristig zu Lernfortschritten führen kann, jedoch im Anschluss, ohne KI-Unterstützung, zu Leistungseinbußen im Vergleich zur Kontrollgruppe.
+  Um sicherzustellen, dass die Studierenden die KI-Tools effizient einsetzen können, erhalten sie von mir eine Einführung und Unterstützung bei deren Anwendung. Während Tests und Klausuren ist die Nutzung von KI-Tools untersagt. Diese Einschränkung soll auch dazu beitragen, die Ergebnisse der Studie "Generative AI Can Harm Learning" @bastani2024generative zu überprüfen, die zeigt, dass die Nutzung von KI-Tools kurzfristig zu Lernfortschritten führen kann, jedoch im Anschluss, ohne KI-Unterstützung, zu Leistungseinbußen im Vergleich zur Kontrollgruppe.
 
 Die Aufgaben stammen regulär aus der Vorlesung und werden unverändert übernommen. Die Bewertung erfolgt unabhängig von der Gruppenzugehörigkeit.
 
-Die Teilnahme an der Studie steht allen Studierenden des Studiengangs Software Engineering, die die Vorlesung „Interaktive Programme“ besuchen, offen und erfolgt auf freiwilliger Basis. Es werden keine Anreize zur Teilnahme angeboten.
+Die Teilnahme an der Studie steht allen Studierenden des Studiengangs Software Engineering, die die Vorlesung "Interaktive Programme" besuchen, offen und erfolgt auf freiwilliger Basis. Es werden keine Anreize zur Teilnahme angeboten.
 
 == Gruppenzuteilung
 
@@ -130,7 +122,7 @@ Auf Grundlage meiner persönlichen Erfahrungen eignet sich Claude besonders gut 
   - Wie gut verstehen die Studierenden die Antworten des Tutors/der KI?
   - Fragen die Studierenden nach, wenn sie die Antwort nicht verstanden haben? (sichtbares Nichtverstehen: z. B. Zögern bei der Umsetzung, Nachfrage bei Kommilitonen)
 
-+ Die Selbsteinschätzung der Studierenden wird mithilfe eines Fragebogens erhoben, der direkt die subjektive Wahrnehmung des eigenen Lernfortschritts, der Leistung, der Motivation und des Wissensstands erfasst. Der Fragebogen wird nach jedem Tutorium ausgefüllt und basiert auf einer Skala von 1 bis 5, wobei 1 für „stimme nicht zu“ und 5 für „stimme voll zu“ steht. Wenn ein Studierender am Tutorium nicht teilnimmt, entfällt auch die Selbsteinschätzung. Der Fragebogen enthält folgende Aussagen:
++ Die Selbsteinschätzung der Studierenden wird mithilfe eines Fragebogens erhoben, der direkt die subjektive Wahrnehmung des eigenen Lernfortschritts, der Leistung, der Motivation und des Wissensstands erfasst. Der Fragebogen wird nach jedem Tutorium ausgefüllt und basiert auf einer Skala von 1 bis 5, wobei 1 für "stimme nicht zu" und 5 für "stimme voll zu" steht. Wenn ein Studierender am Tutorium nicht teilnimmt, entfällt auch die Selbsteinschätzung. Der Fragebogen enthält folgende Aussagen:
   - Die Aufgabenstellung war für mich ohne Hilfe verständlich (1-5).
   - Die Hilfestellung des Tutors/der KI war für mich hilfreich (1-5).
   - Ich konnte die Aufgabe ohne Hilfe lösen (1-5).
@@ -143,12 +135,287 @@ Auf Grundlage meiner persönlichen Erfahrungen eignet sich Claude besonders gut 
 
 === Auswertung
 
-+ **Bewertung der Aufgaben als Maß für den Lernerfolg**: Alle Aufgaben werden von meinem Kollegen und mir bewertet. Jede Teilaufgabe wird dabei vollständig von einem Tutor bewertet, um eine einheitliche Bewertung zu gewährleisten. Die erzielten Punkte sowie ihre Entwicklung im Verlauf des Semesters werden sowohl auf individueller Basis als auch als Median und Durchschnitt innerhalb jeder Gruppe betrachtet.
++ *Bewertung der Aufgaben als Maß für den Lernerfolg*: Alle Aufgaben werden von meinem Kollegen und mir bewertet. Jede Teilaufgabe wird dabei vollständig von einem Tutor bewertet, um eine einheitliche Bewertung zu gewährleisten. Die erzielten Punkte sowie ihre Entwicklung im Verlauf des Semesters werden sowohl auf individueller Basis als auch als Median und Durchschnitt innerhalb jeder Gruppe betrachtet.
 
-+ **Beobachtung des Umgangs mit dem Tutor und den KI-Tools**: Die in den Protokollen festgehaltenen Beobachtungen werden qualitativ ausgewertet, wobei besondere Auffälligkeiten und Unterschiede zwischen den Gruppen erfasst werden. Eine quantitative Auswertung ist hierbei nicht vorgesehen; stattdessen sollen aus den qualitativen Beobachtungen relevante Unterschiede und Gemeinsamkeiten abgeleitet werden.
++ *Beobachtung des Umgangs mit dem Tutor und den KI-Tools*: Die in den Protokollen festgehaltenen Beobachtungen werden qualitativ ausgewertet, wobei besondere Auffälligkeiten und Unterschiede zwischen den Gruppen erfasst werden. Eine quantitative Auswertung ist hierbei nicht vorgesehen; stattdessen sollen aus den qualitativen Beobachtungen relevante Unterschiede und Gemeinsamkeiten abgeleitet werden.
 
-+ **Selbsteinschätzung der Studierenden**: Die Selbsteinschätzung wird anhand des Fragebogens erhoben und ebenfalls qualitativ ausgewertet. Besonderes Augenmerk liegt auf Unterschieden zwischen den Gruppen, insbesondere auf möglichen Überschätzungen in der Experimentalgruppe (EG). Diese Beobachtung basiert auf meinen bisherigen Erfahrungen und soll empirisch überprüft werden.
++ *Selbsteinschätzung der Studierenden*: Die Selbsteinschätzung wird anhand des Fragebogens erhoben und ebenfalls qualitativ ausgewertet. Besonderes Augenmerk liegt auf Unterschieden zwischen den Gruppen, insbesondere auf möglichen Überschätzungen in der Experimentalgruppe (EG). Diese Beobachtung basiert auf meinen bisherigen Erfahrungen und soll empirisch überprüft werden.
 
 == Aufgaben
 
 _wird ergänzt wenn bekannt_
+
+= Auswertung
+
+== Wenige Daten
+
+Es haben wenige Studierende teilgenommen. Von den wenigen Teilnehmern waren nochmal weniger regelmäßig im Tutorium.
+Durchschnittlich haben 10 Studierende das Tutorium besucht, wovon 6 am Versuch teilgenommen haben.
+Dementsprechend ungenau sind die Daten.
+
+== Daten
+
+=== Selbsteinschätzungen
+
+Hier sind die Ergebnisse der selbsteinschätzungen der Studierenden, getrennt nach den Gruppen #text(fill: color-sky-400)[KG] und #text(fill: color-orage-400)[EG].
+
+#{
+  let x_axis = plotst.axis(
+    values: ("", "06.11.2024", "13.11.2024", "04.12.2024"),
+    location: "bottom",
+    show_markings: true,
+  )
+  let y_axis = plotst.axis(
+    min: 0,
+    max: 6,
+    step: 1,
+    location: "left",
+    show_markings: true,
+    helper_lines: true,
+  )
+
+  plotst.overlay(
+    (
+      plotst.graph_plot(
+        plotst.plot(
+          axes: (x_axis, y_axis),
+          data: (
+            ("06.11.2024", 4.5),
+            ("13.11.2024", 3),
+            ("04.12.2024", 3),
+          ),
+        ),
+        (100%, 100%),
+        stroke: color-orage-400,
+        caption: "Auswertung - Die Aufgabenstellung war für mich ohne Hilfe verständlich",
+      ),
+      plotst.graph_plot(
+        plotst.plot(
+          axes: (x_axis, y_axis),
+          data: (
+            ("06.11.2024", 3.5),
+            ("13.11.2024", 5),
+            ("04.12.2024", 4.5),
+          ),
+        ),
+        (100%, 100%),
+        stroke: color-sky-400,
+      ),
+    ),
+    (100%, 20%),
+  )
+
+  plotst.overlay(
+    (
+      plotst.graph_plot(
+        plotst.plot(
+          axes: (x_axis, y_axis),
+          data: (
+            ("06.11.2024", 4),
+            ("13.11.2024", 3.5),
+            ("04.12.2024", 3.5),
+          ),
+        ),
+        (100%, 100%),
+        stroke: color-orage-400,
+        caption: "Auswertung - Die Hilfestellung des Tutors/der KI war für mich hilfreich",
+      ),
+      plotst.graph_plot(
+        plotst.plot(
+          axes: (x_axis, y_axis),
+          data: (
+            ("06.11.2024", 5),
+            ("13.11.2024", 5),
+            ("04.12.2024", 5),
+          ),
+        ),
+        (100%, 100%),
+        stroke: color-sky-400,
+      ),
+    ),
+    (100%, 20%),
+  )
+
+  plotst.overlay(
+    (
+      plotst.graph_plot(
+        plotst.plot(
+          axes: (x_axis, y_axis),
+          data: (
+            ("06.11.2024", 5),
+            ("13.11.2024", 2.5),
+            ("04.12.2024", 3),
+          ),
+        ),
+        (100%, 100%),
+        stroke: color-orage-400,
+        caption: "Auswertung - Ich konnte die Aufgabe ohne Hilfe lösen",
+      ),
+      plotst.graph_plot(
+        plotst.plot(
+          axes: (x_axis, y_axis),
+          data: (
+            ("06.11.2024", 2.5),
+            ("13.11.2024", 4),
+            ("04.12.2024", 4),
+          ),
+        ),
+        (100%, 100%),
+        stroke: color-sky-400,
+      ),
+    ),
+    (100%, 20%),
+  )
+
+  plotst.overlay(
+    (
+      plotst.graph_plot(
+        plotst.plot(
+          axes: (x_axis, y_axis),
+          data: (
+            ("06.11.2024", 3),
+            ("13.11.2024", 3),
+            ("04.12.2024", 3.5),
+          ),
+        ),
+        (100%, 100%),
+        stroke: color-orage-400,
+        caption: "Auswertung - Die Unterstützung des Tutors/der KI hat meine Lösungsansätze beeinflusst",
+      ),
+      plotst.graph_plot(
+        plotst.plot(
+          axes: (x_axis, y_axis),
+          data: (
+            ("06.11.2024", 4),
+            ("13.11.2024", 3),
+            ("04.12.2024", 5),
+          ),
+        ),
+        (100%, 100%),
+        stroke: color-sky-400,
+      ),
+    ),
+    (100%, 20%),
+  )
+
+  plotst.overlay(
+    (
+      plotst.graph_plot(
+        plotst.plot(
+          axes: (x_axis, y_axis),
+          data: (
+            ("06.11.2024", 4.5),
+            ("13.11.2024", 4),
+            ("04.12.2024", 4.5),
+          ),
+        ),
+        (100%, 100%),
+        stroke: color-orage-400,
+        caption: "Auswertung - Den Antworten des Tutors/der KI habe ich vertraut",
+      ),
+      plotst.graph_plot(
+        plotst.plot(
+          axes: (x_axis, y_axis),
+          data: (
+            ("06.11.2024", 5),
+            ("13.11.2024", 5),
+            ("04.12.2024", 5),
+          ),
+        ),
+        (100%, 100%),
+        stroke: color-sky-400,
+      ),
+    ),
+    (100%, 20%),
+  )
+
+  plotst.overlay(
+    (
+      plotst.graph_plot(
+        plotst.plot(
+          axes: (x_axis, y_axis),
+          data: (
+            ("06.11.2024", 1),
+            ("13.11.2024", 2),
+            ("04.12.2024", 5),
+          ),
+        ),
+        (100%, 100%),
+        stroke: color-orage-400,
+        caption: "Auswertung - Mein Wissensstand hat sich durch die Aufgabe verbessert",
+      ),
+      plotst.graph_plot(
+        plotst.plot(
+          axes: (x_axis, y_axis),
+          data: (
+            ("06.11.2024", 3.5),
+            ("13.11.2024", 3.5),
+            ("04.12.2024", 3.5),
+          ),
+        ),
+        (100%, 100%),
+        stroke: color-sky-400,
+      ),
+    ),
+    (100%, 20%),
+  )
+
+  plotst.overlay(
+    (
+      plotst.graph_plot(
+        plotst.plot(
+          axes: (x_axis, y_axis),
+          data: (
+            ("06.11.2024", 5),
+            ("13.11.2024", 2.5),
+            ("04.12.2024", 3.5),
+          ),
+        ),
+        (100%, 100%),
+        stroke: color-orage-400,
+        caption: "Auswertung - Ich fühle mich sicher, eine ähnliche Aufgabe ohne Hilfe lösen zu können",
+      ),
+      plotst.graph_plot(
+        plotst.plot(
+          axes: (x_axis, y_axis),
+          data: (
+            ("06.11.2024", 3),
+            ("13.11.2024", 4),
+            ("04.12.2024", 4),
+          ),
+        ),
+        (100%, 100%),
+        stroke: color-sky-400,
+      ),
+    ),
+    (100%, 20%),
+  )
+}
+
+Das Feld "Sonstige Anmerkungen" wurde nie genutzt.
+
+=== Beobachtung
+
+Die beobachteten Phänomene können wie folgt zusammengefasst werden:
+
+==== EG
+
+Die Studierenden tendieren dazu, ihre Anfragen unpräzise zu formulieren.
+Obgleich sie ihre beabsichtigten Vorgehensweisen skizzieren, tritt bereits in der Problembeschreibung eine gewisse Ungenauigkeit zutage.
+Die LLMs stellen bei auftretender Unklarheit oder Mehrdeutigkeit keine Rückfragen, sondern unterstellen, welche Informationen die Studierenden beabsichtigen. @parmarprompt
+
+Die Studierenden sind nicht in der Lage, die Validität der von den LLMs generierten Ausgaben adäquat einzuschätzen.
+Obwohl sie die Ergebnisse bei praktischer Erprobung testen können, fehlt es ihnen an Erfahrung, um zu beurteilen, ob die vorgeschlagene Lösung überhaupt funktionieren kann.
+Die LLMs erweisen sich jedoch als nützliche Unterstützung, da die Aufgabenstellungen überwiegend einfach sind und vergleichbare Problematiken häufig in den öffentlich zugänglichen Trainingsdaten vorkommen. @tian2023chatgpt
+
+Es lässt sich keine Zurückhaltung bei der Formulierung von Rückfragen feststellen, wenn Unklarheiten in den Ausführungen des Chatbots auftreten.
+
+==== KG
+
+Zu Beginn wiesen die Studierenden in der KG, analog zur EG, unpräzise Fragestellungen auf, die sich jedoch im zeitlichen Verlauf signifikant verbesserten.
+Bei erkennbaren Unklarheiten in der Ausdrucksweise wurden zusätzlich relevante Begriffe erläutert, um den Studierenden eine präzisere Formulierung zu ermöglichen und das gegenseitige Verständnis zu fördern.
+
+Anfangs war die Kommunikation weniger effizient, jedoch zeigte sich im Verlauf eine rasche und kontinuierliche Verbesserung.
+
+In der ersten Woche agierten die Studierenden noch zurückhaltend.
+Sie vertrauten sich den Tutoren schneller an als dem Dozenten, was dazu führte, dass sie vermehrt sowohl initiale als auch Folgefragen stellten.
