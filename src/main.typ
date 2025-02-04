@@ -42,7 +42,7 @@
 
 = Einführung
 
-KI-basierte Werkzeuge, die speziell für den Einsatz im Bildungsbereich geeignet sind, sind ein vergleichsweise neues Phänomen. Ziel dieser Arbeit ist es, zu untersuchen, ob und unter welchen Bedingungen KI-basierte Tools den Lernerfolg von Studierenden im Bereich Software Engineering fördern können.
+KI-basierte Werkzeuge, die für den Einsatz im Bildungsbereich geeignet sind, sind ein vergleichsweise neues Phänomen. Ziel dieser Arbeit ist es, zu untersuchen, ob und unter welchen Bedingungen KI-basierte Tools den Lernerfolg von Studierenden im Bereich Software Engineering fördern können.
 
 Das Bedürfnis, dieses Thema zu erforschen, ergibt sich aus meiner eigenen Erfahrung als Software-Engineering-Studierender. Ich beobachte bei Kommilitonen, dass Tools wie ChatGPT verwendet werden, um Aufgaben zu erleichtern. Dabei treten jedoch Bedenken auf: Häufig wird die Qualität der generierten Informationen nicht hinterfragt, und es mangelt an einem Bewusstsein für den eigenen Lernprozess und die eigene Kompetenzentwicklung.
 
