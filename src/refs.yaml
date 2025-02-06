@@ -62,3 +62,18 @@ tian2023chatgpt:
   parent:
     title: arXiv preprint arXiv:2304.11938
     type: Periodical
+
+roumeliotis2023chatgpt:
+  type: Article
+  title: "Chatgpt and open-ai models: A preliminary review"
+  author:
+    - Roumeliotis, Konstantinos I
+    - Tselikas, Nikolaos D
+  date: 2023
+  page-range: 192
+  parent:
+    type: Periodical
+    title: Future Internet
+    volume: 15
+    issue: 6
+    publisher: MDPI

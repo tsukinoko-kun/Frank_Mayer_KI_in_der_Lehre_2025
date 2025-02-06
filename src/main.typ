@@ -42,13 +42,11 @@
 
 = Einführung
 
-KI-basierte Werkzeuge, die für den Einsatz im Bildungsbereich geeignet sind, sind ein vergleichsweise neues Phänomen. Ziel dieser Arbeit ist es, zu untersuchen, ob und unter welchen Bedingungen KI-basierte Tools den Lernerfolg von Studierenden im Bereich Software Engineering fördern können.
+Chatbots wie ChatGPT sind noch recht neu (Veröffentlichung 2022). @roumeliotis2023chatgpt
 
-Das Bedürfnis, dieses Thema zu erforschen, ergibt sich aus meiner eigenen Erfahrung als Software-Engineering-Studierender. Ich beobachte bei Kommilitonen, dass Tools wie ChatGPT verwendet werden, um Aufgaben zu erleichtern. Dabei treten jedoch Bedenken auf: Häufig wird die Qualität der generierten Informationen nicht hinterfragt, und es mangelt an einem Bewusstsein für den eigenen Lernprozess und die eigene Kompetenzentwicklung.
+Ich meiner persönlichen Erfahrung sehe ich, wie Kommilitonen diese Chatbots im Studium verwenden. Was mir bei dieser Beobachtung zu bedenken gibt ist, dass die Ausgaben der KIs zu wenig hinterfragt wird. Ich stelle mir die Frage wie sinnvoll solche Tools zum Lernen sind.
 
-Daraus ergibt sich die Frage, ob diese Problematik auf die Eigenschaften der Tools selbst zurückzuführen ist oder auf den Umgang der Studierenden mit diesen Werkzeugen.
-
-Das Ziel dieser Arbeit ist es daher, herauszufinden, wie der Einsatz von KI-Tools im Software-Engineering-Studium gestaltet werden sollte, um eine optimale Ausbildung der Studierenden zu gewährleisten. Die Frage nach der generellen Eignung von KI für die berufliche Praxis von Softwareentwickleren wird dabei nicht thematisiert.
+Genau diese Frage möchte ich mit dieser Arbeit beantworten. Ziel ist es, zu untersuchen, ob und unter welchen Bedingungen KI-basierte Chatbots den Lernerfolg von Studierenden im Bereich Software Engineering, am Beispiel Programmierung, fördern können.
 
 Einige Studien deuten darauf hin, dass der Einsatz personalisierter KI-Tutoren, die auf Lernstrategien wie Abstandslernen und gezielte Wiederholung setzen, die Lernleistungen signifikant steigern kann. Eine Untersuchung an der UniDistance Suisse ergab, dass Studierende, die einen solchen KI-Tutor nutzten, eine Verbesserung der Durchschnittsnoten um bis zu 15 Perzentilpunkte erzielten. @baillifard2024effective
 
@@ -57,10 +55,10 @@ Eine weitere Studie zeigt, dass ein individualisiertes KI-Tutorsystem, das auf d
 = Forschungsfragen
 
 == Hauptfrage
-Inwiefern beeinflusst der Einsatz KI-basierter Tools den Lernerfolg von Studierenden in Hochschulkursen im Bereich Software Engineering?
+Inwiefern beeinflusst der Einsatz KI-basierter Tools den Lernerfolg von Studierenden im Hochschulkurs im Bereich Software Engineering am Beispiel Programmierung?
 
 == Unterfragen
-+ Wie verändert sich im Verlauf des Studiums die Selbsteinschätzung der Studierenden in Bezug auf ihren Wissensstand?
++ Wie verändert sich im Verlauf des Semesters die Selbsteinschätzung der Studierenden in Bezug auf ihren Wissensstand?
 + Wie unterscheidet sich der Umgang der Studierenden mit KI-Tools im Vergleich zur Interaktion mit menschlichen Tutoren?
 + In welchem Verhältnis steht die durch KI-Tools geförderte Selbsteinschätzung der Studierenden zu deren tatsächlich gemessenem Lernerfolg?
 
@@ -70,7 +68,7 @@ Inwiefern beeinflusst der Einsatz KI-basierter Tools den Lernerfolg von Studiere
 
 Die vorliegende Untersuchung wird im Rahmen der Vorlesung "Interaktive Programme" an der Hochschule Heilbronn durchgeführt. Diese Vorlesung ist Bestandteil des ersten Semesters im Bachelorstudiengang Software Engineering und vermittelt elementare Programmierkenntnisse. Im Zuge der Studie erproben die Studierenden gezielt Lernprozesse sowohl unter Einsatz als auch ohne Einsatz von KI-basierten Tools.
 
-Ergänzend zur Vorlesung wird ein Tutorium als Zusatzveranstaltung angeboten. Die Teilnahme an diesem Tutorium erfolgt auf freiwilliger Basis, wird jedoch insbesondere den Studierenden nahegelegt, die Schwierigkeiten bei der Aneignung der Lehrinhalte aufweisen.
+Ergänzend zur Vorlesung wird ein Tutorium als Zusatzveranstaltung angeboten. Dieses Tutorium wird von mir und einem Kollegen geführt. Der Termin wurde mit den Studierenden auf zwei Tage nach der Vorlesung abgestimmt. Die Teilnahme an diesem Tutorium erfolgt auf freiwilliger Basis, wird jedoch insbesondere den Studierenden nahegelegt, die Schwierigkeiten bei der Aneignung der Lehrinhalte aufweisen.
 
 == Forschungsdesign
 
@@ -96,7 +94,9 @@ Die Teilnahme an der Studie steht sämtlichen Studierenden des Studiengangs Soft
 
 == Gruppenzuteilung
 
-Zu Beginn des Semesters werden alle Studierenden um ihre freiwillige Teilnahme an der Studie gebeten. Im Zuge dessen erhalten sie detaillierte Informationen über das Ziel der Untersuchung sowie über die Zusammensetzung der Gruppen. Die Zuteilung zu den Gruppen erfolgt unter Berücksichtigung der bisherigen Leistungsbewertung, um eine möglichst gleichmäßige Verteilung zu gewährleisten.
+Zu Beginn des Semesters werden alle Studierenden um ihre freiwillige Teilnahme an der Studie gebeten. Im Zuge dessen erhalten sie detaillierte Informationen über das Ziel der Untersuchung sowie über die Zusammensetzung der Gruppen.
+
+Vor der Zuteilung gab es bereits sieben bewertete Aufgaben (drei Wochen). Die Hälfte davon wurde während den Vorlesungen durchgeführt, die andere Hälfte waren Hausaufgaben. Die Zuteilung zu den Gruppen erfolgt unter Berücksichtigung der bisherigen Leistungsbewertung, um eine möglichst ausgeglichene Verteilung zu gewährleisten. Ausgeglichen heißt hier, dass die Gruppen gleich viele Teilnehmer und in Summe gleich viele Punkte bei den bisherigen Aufgaben erzielten.
 
 == Verwendete Tools
 
