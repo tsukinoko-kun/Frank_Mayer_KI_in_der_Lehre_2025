@@ -43,8 +43,7 @@
 = Einführung
 
 Chatbots wie ChatGPT sind noch recht neu (Veröffentlichung 2022). @roumeliotis2023chatgpt
-
-Ich meiner persönlichen Erfahrung sehe ich, wie Kommilitonen diese Chatbots im Studium verwenden. Was mir bei dieser Beobachtung zu bedenken gibt ist, dass die Ausgaben der KIs zu wenig hinterfragt wird. Ich stelle mir die Frage wie sinnvoll solche Tools zum Lernen sind.
+In meiner persönlichen Erfahrung sehe ich, wie Kommilitonen diese Chatbots im Studium verwenden. Was mir bei dieser Beobachtung zu bedenken gibt ist, dass die Ausgaben der KIs zu wenig hinterfragt werden. Ich stelle mir die Frage wie sinnvoll solche Tools zum Lernen sind.
 
 Genau diese Frage möchte ich mit dieser Arbeit beantworten. Ziel ist es, zu untersuchen, ob und unter welchen Bedingungen KI-basierte Chatbots den Lernerfolg von Studierenden im Bereich Software Engineering, am Beispiel Programmierung, fördern können.
 
@@ -85,10 +84,10 @@ Die Studierenden werden in zwei Gruppen untergliedert:
   Da die Studierenden im ersten Semester über begrenzte Vorkenntnisse verfügen, und ich nicht davon ausgehen kann, dass sie wissen, in welchen Tools KI steckt, erfolgt eine gezielte Information über KI-basierte Tools sowie eine Empfehlung, welche Tools aufgrund ihrer spezifischen Funktionalität nicht eingesetzt werden sollten. Es kann jedoch nicht vollständig verhindert werden, dass Studierende außerhalb des Tutoriums dennoch auf KI-Tools zurückgreifen.
 
 - *EG*: KI-Tutor-Gruppe #linebreak()
-  Die Studierenden in der Experimentalgruppe werden ermutigt, KI-gestützte Tools zur Unterstützung ihres Lernprozesses zu verwenden. Konkret sollen Chatbots wie Claude für Verständnisfragen herangezogen werden. Der Chatbot wird mittels Rollen-System-Prompts @zheng2023helpful dahingehend konfiguriert, dass er als tutorielle Instanz agiert, welche die Studierenden schrittweise durch den Lösungsweg führt, ohne dabei konkrete Lösungsansätze zu liefern. #linebreak()
+  Die Studierenden in der Experimentalgruppe werden ermutigt, KI-gestützte Tools zur Unterstützung ihres Lernprozesses zu verwenden. Konkret sollen Chatbots wie Claude für Verständnisfragen herangezogen werden. Der Chatbot wird mittels Rollen-Prompts @zheng2023helpful dahingehend konfiguriert, dass er als tutorielle Instanz agiert, welche die Studierenden schrittweise durch den Lösungsweg führt, ohne dabei konkrete Lösungsansätze zu liefern. #linebreak()
   Um sicherzustellen, dass die Studierenden die KI-Tools effizient einsetzen können, erhalten sie von mir eine ausführliche Einführung sowie Unterstützung bei deren Anwendung. Während Prüfungen, wie Tests und Klausuren, ist der Einsatz von KI-Tools untersagt. Diese Restriktion dient zugleich der Überprüfung der Ergebnisse der Studie "Generative AI Can Harm Learning" @bastani2024generative, welche darlegt, dass der Einsatz von KI-Tools zwar kurzfristig zu Lernfortschritten führen kann, jedoch im anschließenden, KI-unabhängigen Betrieb zu Leistungseinbußen im Vergleich zur Kontrollgruppe führt.
 
-Die Aufgabenstellungen entstammen der regulären Vorlesung und werden unverändert übernommen. Die Bewertung erfolgt dabei unabhängig von der Gruppenzugehörigkeit.
+Es gibt keine zusätzlichen oder veränderten Aufgabenstellungen für die Versuchsteilnehmenden. Alle Aufgaben wurden für den Kurs "Interaktive Programme" ohne diesen Versuch im Kopf konzipiert. Die Bewertung erfolgt dabei unabhängig von der Gruppenzugehörigkeit.
 
 Die Teilnahme an der Studie steht sämtlichen Studierenden des Studiengangs Software Engineering, die an der Vorlesung "Interaktive Programme" partizipieren, uneingeschränkt und auf freiwilliger Basis offen. Es werden keinerlei Anreize zur Teilnahme gewährt.
 
