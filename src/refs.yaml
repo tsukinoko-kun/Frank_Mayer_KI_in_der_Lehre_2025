@@ -15,7 +15,7 @@ bastani2024generative:
     title: Available at SSRN 4895486
 baillifard2024effective:
   type: Article
-  title: 'Effective learning with a personal AI tutor: A case study'
+  title: "Effective learning with a personal AI tutor: A case study"
   author:
     - Baillifard, Ambroise
     - Gabella, Maxime
@@ -62,7 +62,6 @@ tian2023chatgpt:
   parent:
     title: arXiv preprint arXiv:2304.11938
     type: Periodical
-
 roumeliotis2023chatgpt:
   type: Article
   title: "Chatgpt and open-ai models: A preliminary review"
@@ -77,3 +76,25 @@ roumeliotis2023chatgpt:
     volume: 15
     issue: 6
     publisher: MDPI
+zheng2023helpful:
+  type: Article
+  title: "Is “A Helpful Assistant” the Best Role for Large Language Models? A Systematic Evaluation of Social Roles in System Prompts"
+  author:
+    - "Zheng, Mingqian"
+    - "Pei, Jiaxin"
+    - "Jurgens, David"
+  date: 2023
+  parent:
+    type: misc
+    title: "arXiv preprint"
+    volume: 8
+    serial-number:
+      arxiv: "2311.10054"
+kabadere2024bringing:
+  type: Thesis
+  title: "Bringing to Light: The Challenges of Representing and Reasoning Common Sense Knowledge in AI Systems"
+  author: Kabadere, Zeynep
+  date: 2024
+  parent:
+    type: Misc
+    title: Middle East Technical University

@@ -68,7 +68,7 @@ Inwiefern beeinflusst der Einsatz KI-basierter Tools den Lernerfolg von Studiere
 
 Die vorliegende Untersuchung wird im Rahmen der Vorlesung "Interaktive Programme" an der Hochschule Heilbronn durchgeführt. Diese Vorlesung ist Bestandteil des ersten Semesters im Bachelorstudiengang Software Engineering und vermittelt elementare Programmierkenntnisse. Im Zuge der Studie erproben die Studierenden gezielt Lernprozesse sowohl unter Einsatz als auch ohne Einsatz von KI-basierten Tools.
 
-Ergänzend zur Vorlesung wird ein Tutorium als Zusatzveranstaltung angeboten. Dieses Tutorium wird von mir und einem Kollegen geführt. Der Termin wurde mit den Studierenden auf zwei Tage nach der Vorlesung abgestimmt. Die Teilnahme an diesem Tutorium erfolgt auf freiwilliger Basis, wird jedoch insbesondere den Studierenden nahegelegt, die Schwierigkeiten bei der Aneignung der Lehrinhalte aufweisen.
+Ergänzend zur Vorlesung wird ein Tutorium als Zusatzveranstaltung angeboten. Dieses Tutorium wird von mir und einem Kollegen geführt. Der Termin wurde mit den Studierenden auf zwei Tage nach der Vorlesung abgestimmt. Die Teilnahme an diesem Tutorium erfolgt auf freiwilliger Basis, wird jedoch insbesondere den Studierenden nahegelegt, die Schwierigkeiten bei der Aneignung der Lehrinhalte aufweisen, das machen meine Kollegen und ich an Punktzahlen bei den Übungsaufgaben fest, die zum Bestehen des Kurses zu niedrig sind.
 
 == Forschungsdesign
 
@@ -82,10 +82,10 @@ Die Studierenden werden in zwei Gruppen untergliedert:
 
 - *KG*: Nicht-KI-Gruppe #linebreak()
   Die Studierenden in der Kontrollgruppe werden instruiert, auf den Einsatz von KI-Tools zu verzichten. Sie nehmen an einem traditionellen Tutorium teil, in dem ich sie bei der Problemlösung unterstütze und Erklärungen zur Aufgabenstellung bereitstelle, ohne konkrete Lösungsansätze zu offerieren. Stattdessen erhalten sie dezente Hinweise, die sie in Richtung einer möglichen Lösung anleiten, sodass sie diese eigenständig erarbeiten können. #linebreak()
-  Da die Studierenden im ersten Semester über begrenzte Vorkenntnisse verfügen, erfolgt eine gezielte Information über KI-basierte Tools sowie eine Empfehlung, welche Tools aufgrund ihrer spezifischen Funktionalität nicht eingesetzt werden sollten. Es kann jedoch nicht vollständig verhindert werden, dass Studierende außerhalb des Tutoriums dennoch auf KI-Tools zurückgreifen.
+  Da die Studierenden im ersten Semester über begrenzte Vorkenntnisse verfügen, und ich nicht davon ausgehen kann, dass sie wissen, in welchen Tools KI steckt, erfolgt eine gezielte Information über KI-basierte Tools sowie eine Empfehlung, welche Tools aufgrund ihrer spezifischen Funktionalität nicht eingesetzt werden sollten. Es kann jedoch nicht vollständig verhindert werden, dass Studierende außerhalb des Tutoriums dennoch auf KI-Tools zurückgreifen.
 
 - *EG*: KI-Tutor-Gruppe #linebreak()
-  Die Studierenden in der Experimentalgruppe werden ermutigt, KI-gestützte Tools zur Unterstützung ihres Lernprozesses zu verwenden. Konkret sollen Chatbots wie Claude für Verständnisfragen herangezogen werden. Der Chatbot wird dahingehend konfiguriert, dass er als tutorielle Instanz agiert, welche die Studierenden schrittweise durch den Lösungsweg führt, ohne dabei konkrete Lösungsansätze zu liefern. #linebreak()
+  Die Studierenden in der Experimentalgruppe werden ermutigt, KI-gestützte Tools zur Unterstützung ihres Lernprozesses zu verwenden. Konkret sollen Chatbots wie Claude für Verständnisfragen herangezogen werden. Der Chatbot wird mittels Rollen-System-Prompts @zheng2023helpful dahingehend konfiguriert, dass er als tutorielle Instanz agiert, welche die Studierenden schrittweise durch den Lösungsweg führt, ohne dabei konkrete Lösungsansätze zu liefern. #linebreak()
   Um sicherzustellen, dass die Studierenden die KI-Tools effizient einsetzen können, erhalten sie von mir eine ausführliche Einführung sowie Unterstützung bei deren Anwendung. Während Prüfungen, wie Tests und Klausuren, ist der Einsatz von KI-Tools untersagt. Diese Restriktion dient zugleich der Überprüfung der Ergebnisse der Studie "Generative AI Can Harm Learning" @bastani2024generative, welche darlegt, dass der Einsatz von KI-Tools zwar kurzfristig zu Lernfortschritten führen kann, jedoch im anschließenden, KI-unabhängigen Betrieb zu Leistungseinbußen im Vergleich zur Kontrollgruppe führt.
 
 Die Aufgabenstellungen entstammen der regulären Vorlesung und werden unverändert übernommen. Die Bewertung erfolgt dabei unabhängig von der Gruppenzugehörigkeit.
@@ -110,13 +110,13 @@ Die Studierenden der Experimentalgruppe (EG) haben die Möglichkeit, eigenständ
 - *#link("https://chat.openai.com")[ChatGPT]* #linebreak()
   Ein Chatbot, der auf den GPT-4o- und GPT-4o mini-Modellen von OpenAI basiert.
 
-Auf Grundlage meiner persönlichen Erfahrungen erweist sich Claude als besonders geeignet als tutorielle Unterstützung, da dieses LLM zunächst versucht, die ursächlichen Probleme zu identifizieren, bevor Lösungsvorschläge unterbreitet werden. Im Gegensatz dazu generiert GPT unmittelbar Lösungsvorschläge, die häufig nicht adäquat auf das zugrunde liegende Problem eingehen, sofern dieses nicht eindeutig vom Nutzer formuliert wurde. @parmarprompt
+Auf Grundlage meiner persönlichen Erfahrungen erweist sich Claude als besonders geeignet als tutorielle Unterstützung, da dieses LLM zunächst versucht, die ursächlichen Probleme zu identifizieren, bevor Lösungsvorschläge unterbreitet werden. Das ist vergleichbar mit den neueren advanced reasoning Modellen (diese waren erst nach dem Versuch zugänglich), mit dem Unterschied, dass ein advances reasoning Modell nachdenkt und hinterfragt, wärend Claude 3.5 Sonnet dem Anwender Methoden gibt, um Unklarheiten genauer zu beleuchten @kabadere2024bringing. Im Gegensatz dazu generiert GPT unmittelbar Lösungsvorschläge, die häufig nicht adäquat auf das zugrunde liegende Problem eingehen, sofern dieses nicht eindeutig vom Nutzer formuliert wurde. @parmarprompt
 
 == Datenerhebung
 
 === Messung
 
-+ Der Lernerfolg wird anhand der Bewertung der Aufgaben quantifiziert. Hierbei wird bewusst auf Selbsteinschätzungen der Studierenden verzichtet, da diese oftmals als unzuverlässig gelten. Die Bewertung erfolgt durch die Tutoren. Der Professor stellt eine Musterlösung zur Verfügung, und es werden gemeinsame Bewertungsstandards definiert. Jede Teilaufgabe wird vollständig von einem Tutor bewertet, um die Vergleichbarkeit unter den Studierenden sicherzustellen.
++ Der Lernerfolg wird anhand der Bewertung der Aufgaben quantifiziert. Hierbei wird bewusst auf Selbsteinschätzungen der Studierenden verzichtet, da diese oftmals als unzuverlässig gelten. Die Bewertung erfolgt durch die Tutoren (mich und meine Kollegen). Der Professor stellt eine Musterlösung zur Verfügung, und es werden gemeinsame Bewertungsstandards definiert. Jede Teilaufgabe wird vollständig von einem Tutor bewertet, um die Vergleichbarkeit unter den Studierenden sicherzustellen.
 + Der Umgang der Studierenden mit dem Tutor beziehungsweise den KI-Tools wird durch gezielte Beobachtungen erhoben. Während ich die Studierenden beobachte, die mit KI-Tools arbeiten, übernimmt mein Kollege die Beobachtung jener, die im Tutorium Unterstützung von mir erhalten. Diese Beobachtungen werden in einem Protokoll dokumentiert, das folgende Fragestellungen beinhaltet:
   - Inwieweit formulieren die Studierenden ihre Fragen präzise?
   - Wie gut erfassen die Studierenden die Antworten des Tutors bzw. der KI?
@@ -135,23 +135,23 @@ Auf Grundlage meiner persönlichen Erfahrungen erweist sich Claude als besonders
 
 + *Bewertung der Aufgaben als Indikator für den Lernerfolg*: Sämtliche Aufgaben werden von meinem Kollegen und mir bewertet. Jede Teilaufgabe wird hierbei vollständig von einem Tutor beurteilt, um eine konsistente Bewertung zu gewährleisten. Die erzielten Punkte sowie deren Entwicklung im Verlauf des Semesters werden sowohl auf individueller Basis als auch anhand von Median und Durchschnitt innerhalb der jeweiligen Gruppen analysiert.
 + *Beobachtung des Umgangs mit dem Tutor und den KI-Tools*: Die in den Protokollen dokumentierten Beobachtungen werden qualitativ ausgewertet, wobei insbesondere signifikante Auffälligkeiten und Unterschiede zwischen den Gruppen erfasst werden. Eine quantitative Auswertung ist in diesem Zusammenhang nicht vorgesehen; vielmehr sollen aus den qualitativen Daten relevante Unterschiede und Gemeinsamkeiten abgeleitet werden.
-+ *Selbsteinschätzung der Studierenden*: Die Erhebung der Selbsteinschätzung erfolgt anhand des Fragebogens und wird ebenfalls qualitativ analysiert. Hierbei liegt besonderes Augenmerk auf Unterschieden zwischen den Gruppen, insbesondere hinsichtlich potenzieller Überschätzungen in der Experimentalgruppe (EG). Diese Beobachtungen beruhen auf meinen bisherigen Erfahrungen und sollen empirisch überprüft werden.
++ *Selbsteinschätzung der Studierenden*: Die Erhebung der Selbsteinschätzung erfolgt anhand des Fragebogens. Hierbei liegt besonderes Augenmerk auf Unterschieden zwischen den Gruppen, insbesondere hinsichtlich potenzieller Überschätzungen in der Experimentalgruppe (EG).
 
 == Aufgaben
 
-_wird noch ergänzt_
+=== Themen
+
+Einführung Programmierung allgemein und Java Syntax, Kontrollstrukturen, Datentypen, Debugging, Vererbung, Interfaces, Generics, Iteratoren, Lambda Funktionen.
+
+=== Stil der Aufgaben
+
+Während der Vorlesung gibt es immer wieder kleine Ausgaben, die bis zum Ende des Vorlesung abzugeben sind. Für die Bearbeitung dieser Aufgaben ist eine Bearbeitungszeit von jeweils etwa 15 Minuten im Tagesplan vorgesehen und sowohl der Professor, als auch wir Tutoren sind während dieser Bearbeitungszeit für Fragen und Hilfestellungen verfügbar.
+
+Im laufe der Woche müssen die Studierenden größere Aufgaben außerhalb der Vorlesungszeit bearbeiten. Für diese ist eine Bearbeitungszeit von mehreren Stunden vorgesehen.
 
 = Auswertung
 
-== Wenige Daten
-
-Die Anzahl der Studierenden, die an der Untersuchung teilnahmen, war gering. Unter den wenigen Teilnehmenden war die regelmäßige Teilnahme am Tutorium noch seltener zu verzeichnen.
-Im Durchschnitt besuchten 10 Studierende das Tutorium, von denen 6 am Versuch partizipierten.
-Folglich ist die Genauigkeit der erhobenen Daten als eingeschränkt zu bewerten.
-
-== Daten
-
-=== Selbsteinschätzungen
+== Selbsteinschätzungen
 
 Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden dargestellt, differenziert nach den Gruppen #text(fill: color-sky-400)[KG] und #text(fill: color-orage-400)[EG].
 Aufgrund der geringen Gruppengrößen wird stets der Durchschnittswert angegeben.
@@ -391,23 +391,23 @@ Aufgrund der geringen Gruppengrößen wird stets der Durchschnittswert angegeben
 
 Das Feld "Sonstige Anmerkungen" wurde nie genutzt.
 
-=== Beobachtung
+== Beobachtung
 
 Die beobachteten Phänomene können wie folgt zusammengefasst werden:
 
-==== EG
+=== EG
 
-Die Studierenden tendieren dazu, ihre Anfragen unpräzise zu formulieren.
+Die Studierenden tendieren dazu, ihre Anfragen unpräzise zu formulieren. Unpräzise heißt in dem Fall, dass ich beim Lesen der Anfrage nicht sicher bin, was der Studierende von dem Chatbot will.
 Obgleich sie ihre beabsichtigten Vorgehensweisen skizzieren, tritt bereits in der Problembeschreibung eine gewisse Ungenauigkeit zutage.
-Die LLMs stellen bei auftretender Unklarheit oder Mehrdeutigkeit keine Rückfragen, sondern unterstellen, welche Informationen die Studierenden beabsichtigen. @parmarprompt
+Die LLMs (besonders GPT) stellen bei auftretender Unklarheit oder Mehrdeutigkeit keine Rückfragen, sondern unterstellen, welche Informationen die Studierenden beabsichtigen. @parmarprompt
 
-Die Studierenden sind nicht in der Lage, die Validität der von den LLMs generierten Ausgaben adäquat einzuschätzen.
-Obwohl sie die Ergebnisse bei praktischer Erprobung testen können, fehlt es ihnen an Erfahrung, um zu beurteilen, ob die vorgeschlagene Lösung überhaupt funktionieren kann.
+Ich halte die Studierenden für nicht in der Lage, die Validität der von den LLMs generierten Ausgaben adäquat einzuschätzen. Zu dem Schluss komme ich, da für mich direkt erkennbar ist, dass die Antwort des LLM nicht die Aufgabenstellung löst und nicht zu der selbstständigen Erarbeitung einer Lösung beiträgt, die Studierenden den Lösungsvorschlag des LLM dennoch ausprobieren.
+
 Die LLMs erweisen sich jedoch als nützliche Unterstützung, da die Aufgabenstellungen überwiegend einfach sind und vergleichbare Problematiken häufig in den öffentlich zugänglichen Trainingsdaten vorkommen. @tian2023chatgpt
 
-Es lässt sich keine Zurückhaltung bei der Formulierung von Rückfragen feststellen, wenn Unklarheiten in den Ausführungen des Chatbots auftreten.
+Es lässt sich keine Zurückhaltung bei der Formulierung von Rückfragen feststellen, wenn Unklarheiten (wie in Kapitel Methodik bei den Fragebögen definiert) in den Ausführungen des Chatbots auftreten. Dies mache ich daran fest, dass die Studierenden mehrfach (3-5 mal) mit dem Chatbot über eine Aufgabe schreiben, bevor sie etwas programmieren.
 
-==== KG
+=== KG
 
 Zu Beginn wiesen die Studierenden in der KG, analog zur EG, unpräzise Fragestellungen auf, die sich jedoch im zeitlichen Verlauf signifikant verbesserten.
 Bei erkennbaren Unklarheiten in der Ausdrucksweise wurden zusätzlich relevante Begriffe erläutert, um den Studierenden eine präzisere Formulierung zu ermöglichen und das gegenseitige Verständnis zu fördern.
@@ -417,7 +417,7 @@ Anfangs war die Kommunikation weniger effizient, jedoch zeigte sich im Verlauf e
 In der ersten Woche agierten die Studierenden noch zurückhaltend.
 Sie vertrauten sich den Tutoren schneller an als dem Dozenten, was dazu führte, dass sie vermehrt sowohl initiale als auch Folgefragen stellten.
 
-=== Bewertungen
+== Bewertungen
 
 Im Verlauf des Semesters wird ein systematischer Vergleich der Punktzahlen der beiden Gruppen #text(fill: color-sky-400)[KG] und #text(fill: color-orage-400)[EG] vorgenommen.
 Da die Aufgaben mit unterschiedlich vielen Punkten bewertet wurden, wird der prozentuale Anteil der erreichten Punkte als Vergleichsmaßstab herangezogen.
@@ -525,9 +525,15 @@ Zudem erfolgt die Berechnung des Durchschnitts innerhalb der jeweiligen Gruppen.
   placement: top,
 )
 
+= Schlussfolgerung
+
+Die Selbsteinschätzungen der Studierenden lässt mich zu dem Schluss gelangen, dass die KG eine bessere Lernerfahrung hatte. Zu dieser Erkenntnis komme ich durch den Verlauf der Frage 3 (Ich konnte die Aufgabe ohne Hilfe lösen).
+
+Der Verlauf der Frage 6 (Mein Wissensstand hat sich durch die Aufgabe verbessert) kann so interpretiert werden, dass die EG mehr gelernt hat. Es könnte genauso gut sein, dass die KG nur das Gefühl hatte mehr gelernt zu haben. Diese beiden Möglichkeiten lassen sich nicht auseinanderhalten, da die Punktzahlen bei den Aufgaben zu nah aneinander liegen.
+
 = Diskussion
 
-Die vorliegende Untersuchung weist mehrere methodische Limitationen auf, die bei der Interpretation der Ergebnisse sorgfältig berücksichtigt werden müssen. Ein zentraler Kritikpunkt betrifft die geringe Anzahl der teilnehmenden Studierenden, wodurch die statistische Aussagekraft des Versuchs erheblich eingeschränkt wird. Obwohl aus den Selbsteinschätzungen eine Tendenz erkennbar ist, wonach die Kontrollgruppe (KG) eine moderat bessere Lernerfahrung verzeichnete als die Experimentalgruppe (EG), ist aufgrund der kleinen Stichprobe keine belastbare Generalisierung möglich.
+Die vorliegende Untersuchung weist mehrere methodische Limitationen auf, die bei der Interpretation der Ergebnisse sorgfältig berücksichtigt werden müssen. Ein zentraler Kritikpunkt betrifft die geringe Anzahl der teilnehmenden Studierenden, wodurch die statistische Aussagekraft des Versuchs erheblich eingeschränkt wird. Obwohl aus den Selbsteinschätzungen eine Tendenz erkennbar ist, wonach die Kontrollgruppe (KG) eine moderat bessere Lernerfahrung verzeichnete als die Experimentalgruppe (EG), ist aufgrund der kleinen Stichprobe keine belastbare Generalisierung möglich. Im Durchschnitt besuchten 10 Studierende das Tutorium, von denen 6 am Versuch partizipierten.
 
 Ein weiteres Problem stellt die unzuverlässige Ausfüllung des Fragebogens dar. Die Inkonsistenzen in den Rückmeldungen der Teilnehmenden werfen erhebliche Zweifel an der Validität der erhobenen Selbsteinschätzungsdaten auf. Es ist daher anzunehmen, dass methodische Schwächen in der Datenerhebung einen Einfluss auf die ermittelten Ergebnisse hatten.
 
