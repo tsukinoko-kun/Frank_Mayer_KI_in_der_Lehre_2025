@@ -1,3 +1,4 @@
+---
 name: Deploy static content to Pages
 
 on:
@@ -24,20 +25,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Typst
-        uses: lvignoli/typst-action@main
-        with:
-          source_file: src/main.typ
+
+      - name: Compile Typst document
+        run: |
+          docker run --rm \
+            -v $GITHUB_WORKSPACE:/work \
+            ghcr.io/typst/typst:v0.12.0 compile /work/src/main.typ /work/src/main.pdf
+
       - name: Move PDF to dist directory
         run: |
           mkdir -p ./dist
           mv ./src/main.pdf ./dist/Frank_Mayer_KI_in_der_Lehre_2025.pdf
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
