@@ -98,3 +98,18 @@ kabadere2024bringing:
   parent:
     type: Misc
     title: Middle East Technical University
+sonntagbauer2023kunstliche:
+  type: Article
+  title: "Künstliche Intelligenz: Wie werden ChatGPT und andere KI-Anwendungen unseren ärztlichen Alltag verändern?"
+  author:
+    - "Sonntagbauer, Michael"
+    - "Haar, Markus"
+    - "Kluge, Stefan"
+  date: 2023
+  page-range: "366-371"
+  parent:
+    type: Periodical
+    title: "Medizinische Klinik-Intensivmedizin und Notfallmedizin"
+    volume: 118
+    issue: 5
+    publisher: Springer

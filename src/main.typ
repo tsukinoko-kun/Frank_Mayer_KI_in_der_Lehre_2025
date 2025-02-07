@@ -1,7 +1,8 @@
 #import "@preview/charged-ieee:0.1.3": ieee
-#import "@preview/plotst:0.2.0"
+#import "./typst-plotting/lib.typ": *
 #let color-orage-400 = rgb("#FF8904")
 #let color-sky-400 = rgb("#00BCFF")
+#let color-gray-800 = rgb("#6A7282")
 
 #set par.line(numbering: "1")
 
@@ -143,12 +144,12 @@ Ab sofort wirst du dem Anwender als Studierendem begegnen und ihn bei seinen Auf
 
 === Messung
 
-+ **Lernerfolg** – Der Lernerfolg wird anhand der Bewertung der Aufgaben quantifiziert. Dabei wird bewusst auf die Selbsteinschätzung der Studierenden verzichtet, da diese oftmals als unzuverlässig beurteilt wird. Die Bewertung erfolgt durch die Tutoren (mich und meine Kollegen). Hierzu stellt der Professor eine Musterlösung zur Verfügung, und es werden einheitliche Bewertungsstandards definiert. Jede Teilaufgabe wird vollständig von einem Tutor gewertet, um eine Vergleichbarkeit der Ergebnisse sicherzustellen.
-+ **Interaktion mit Tutor/KI** – Der Umgang der Studierenden mit dem Tutor beziehungsweise den KI-Tools wird durch gezielte Beobachtungen erfasst. Während ich die Studierenden, die mit KI-Tools arbeiten, beobachte, übernimmt mein Kollege die Beobachtungen derjenigen, die im herkömmlichen Tutorium betreut werden. Diese Beobachtungen werden in einem Protokoll dokumentiert, das folgende Fragestellungen beinhaltet:
++ *Lernerfolg* – Der Lernerfolg wird anhand der Bewertung der Aufgaben quantifiziert. Dabei wird bewusst auf die Selbsteinschätzung der Studierenden verzichtet, da diese oftmals als unzuverlässig beurteilt wird. Die Bewertung erfolgt durch die Tutoren (mich und meine Kollegen). Hierzu stellt der Professor eine Musterlösung zur Verfügung, und es werden einheitliche Bewertungsstandards definiert. Jede Teilaufgabe wird vollständig von einem Tutor gewertet, um eine Vergleichbarkeit der Ergebnisse sicherzustellen.
++ *Interaktion mit Tutor/KI* – Der Umgang der Studierenden mit dem Tutor beziehungsweise den KI-Tools wird durch gezielte Beobachtungen erfasst. Während ich die Studierenden, die mit KI-Tools arbeiten, beobachte, übernimmt mein Kollege die Beobachtungen derjenigen, die im herkömmlichen Tutorium betreut werden. Diese Beobachtungen werden in einem Protokoll dokumentiert, das folgende Fragestellungen beinhaltet:
   - Inwieweit formulieren die Studierenden ihre Fragen präzise?
   - Wie gut erfassen die Studierenden die Antworten des Tutors bzw. der KI?
   - Wird bei Unklarheiten in den Antworten nachgefragt? (Indizien hierfür sind beispielsweise Zögern bei der Umsetzung oder zusätzliche Rückfragen an Kommilitonen)
-+ **Selbsteinschätzung** – Die subjektive Wahrnehmung des eigenen Lernfortschritts, der erbrachten Leistung, der Motivation und des Wissensstands wird mittels eines Fragebogens erhoben. Dieser wird nach jedem Tutorium ausgefüllt und basiert auf einer fünfstufigen Likert-Skala, wobei 1 "stimme nicht zu" und 5 "stimme voll zu" repräsentiert. Bei Nichtteilnahme am Tutorium entfällt die Erhebung der Selbsteinschätzung. Es ist zudem zu beachten, dass die Teilnahme am Ausfüllen des Fragebogens freiwillig erfolgt. Der Fragebogen umfasst folgende Aussagen:
++ *Selbsteinschätzung* – Die subjektive Wahrnehmung des eigenen Lernfortschritts, der erbrachten Leistung, der Motivation und des Wissensstands wird mittels eines Fragebogens erhoben. Dieser wird nach jedem Tutorium ausgefüllt und basiert auf einer fünfstufigen Likert-Skala, wobei 1 "stimme nicht zu" und 5 "stimme voll zu" repräsentiert. Bei Nichtteilnahme am Tutorium entfällt die Erhebung der Selbsteinschätzung. Es ist zudem zu beachten, dass die Teilnahme am Ausfüllen des Fragebogens freiwillig erfolgt. Der Fragebogen umfasst folgende Aussagen:
   - Die Aufgabenstellung war für mich ohne Hilfe verständlich (1-5).
   - Die Hilfestellung des Tutors/der KI war für mich hilfreich (1-5).
   - Ich konnte die Aufgabe ohne Hilfe lösen (1-5).
@@ -160,9 +161,9 @@ Ab sofort wirst du dem Anwender als Studierendem begegnen und ihn bei seinen Auf
 
 === Auswertung
 
-+ **Aufgabenbewertung**: Sämtliche Aufgaben werden von meinem Kollegen und mir bewertet. Jede Teilaufgabe wird vollständig von einem Tutor beurteilt, sodass eine konsistente Bewertung gewährleistet werden kann. Die erzielten Punkte sowie deren Entwicklung im Verlauf des Semesters werden sowohl auf individueller Basis als auch anhand von Median und Durchschnitt innerhalb der jeweiligen Gruppen analysiert.
-+ **Beobachtungen**: Die in den Protokollen dokumentierten Beobachtungen werden qualitativ ausgewertet. Besonderes Augenmerk gilt dabei signifikanten Auffälligkeiten und Unterschieden zwischen den Gruppen. Eine quantitative Auswertung ist in diesem Zusammenhang nicht vorgesehen; vielmehr sollen aus den qualitativen Daten relevante Muster und Differenzierungen abgeleitet werden.
-+ **Selbsteinschätzung**: Die Auswertung der Selbsteinschätzungsdaten erfolgt anhand des Fragebogens. Hierbei wird insbesondere der Vergleich zwischen den Gruppen hinsichtlich potenzieller Überschätzungen in der Experimentalgruppe (EG) berücksichtigt.
++ *Aufgabenbewertung*: Sämtliche Aufgaben werden von meinem Kollegen und mir bewertet. Jede Teilaufgabe wird vollständig von einem Tutor beurteilt, sodass eine konsistente Bewertung gewährleistet werden kann. Die erzielten Punkte sowie deren Entwicklung im Verlauf des Semesters werden sowohl auf individueller Basis als auch anhand von Median und Durchschnitt innerhalb der jeweiligen Gruppen analysiert.
++ *Beobachtungen*: Die in den Protokollen dokumentierten Beobachtungen werden qualitativ ausgewertet. Besonderes Augenmerk gilt dabei signifikanten Auffälligkeiten und Unterschieden zwischen den Gruppen. Eine quantitative Auswertung ist in diesem Zusammenhang nicht vorgesehen; vielmehr sollen aus den qualitativen Daten relevante Muster und Differenzierungen abgeleitet werden.
++ *Selbsteinschätzung*: Die Auswertung der Selbsteinschätzungsdaten erfolgt anhand des Fragebogens. Hierbei wird insbesondere der Vergleich zwischen den Gruppen hinsichtlich potenzieller Überschätzungen in der Experimentalgruppe (EG) berücksichtigt.
 
 == Aufgaben
 
@@ -172,9 +173,9 @@ Einführung in die Programmierung allgemein und in die Java-Syntax, Kontrollstru
 
 === Stil der Aufgaben
 
-Während der Vorlesung werden regelmäßig kleinere Aufgaben eingebettet, die jeweils innerhalb von ca. 15 Minuten bearbeitet und am Ende der Vorlesung abgegeben werden müssen. Für die Bearbeitung dieser Aufgaben stehen sowohl der Professor als auch die Tutoren für Fragen und Hilfestellungen zur Verfügung.
+Während der Vorlesung werden regelmäßig kleinere Aufgaben eingebettet, die jeweils innerhalb von ca. 15 Minuten bearbeitet und am Ende der Vorlesung abgegeben werden müssen. Für die Bearbeitung dieser Aufgaben stehen sowohl der Professor als auch die Tutoren für Fragen und Hilfestellungen zur Verfügung. Für diese Aufgaben muss vereinzelt in der Java Dokumentation nachgelesen werden, darüberhinaus wird keine Übertragungsfähigkeit gefordert.
 
-Im weiteren Wochenverlauf bearbeiten die Studierenden umfangreichere Aufgabenstellungen außerhalb der Vorlesungszeit, für die eine Bearbeitungsdauer von mehreren Stunden vorgesehen ist.
+Im weiteren Wochenverlauf bearbeiten die Studierenden umfangreichere Aufgabenstellungen außerhalb der Vorlesungszeit, für die eine Bearbeitungsdauer von mehreren Stunden vorgesehen ist. Bei diesen Aufgaben müssen die Studierenden selbstständig ergänzende Informationen finden, um sie lösen zu können.
 
 = Auswertung
 
@@ -183,12 +184,12 @@ Im weiteren Wochenverlauf bearbeiten die Studierenden umfangreichere Aufgabenste
 Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden differenziert nach den Gruppen #text(fill: color-sky-400)[KG] und #text(fill: color-orage-400)[EG] präsentiert. Aufgrund der geringen Gruppengrößen wird stets der Durchschnittswert angegeben.
 
 #{
-  let x_axis = plotst.axis(
+  let x_axis = axis(
     values: ("", "06.11.2024", "13.11.2024", "04.12.2024"),
     location: "bottom",
     show_markings: true,
   )
-  let y_axis = plotst.axis(
+  let y_axis = axis(
     min: 0,
     max: 6,
     step: 1,
@@ -197,10 +198,10 @@ Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden di
     helper_lines: true,
   )
 
-  plotst.overlay(
+  overlay(
     (
-      plotst.graph_plot(
-        plotst.plot(
+      graph_plot(
+        plot(
           axes: (x_axis, y_axis),
           data: (
             ("06.11.2024", 4.5),
@@ -212,8 +213,8 @@ Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden di
         stroke: color-orage-400,
         caption: "Auswertung - Die Aufgabenstellung war für mich ohne Hilfe verständlich",
       ),
-      plotst.graph_plot(
-        plotst.plot(
+      graph_plot(
+        plot(
           axes: (x_axis, y_axis),
           data: (
             ("06.11.2024", 3.5),
@@ -228,10 +229,10 @@ Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden di
     (100%, 20%),
   )
 
-  plotst.overlay(
+  overlay(
     (
-      plotst.graph_plot(
-        plotst.plot(
+      graph_plot(
+        plot(
           axes: (x_axis, y_axis),
           data: (
             ("06.11.2024", 4),
@@ -243,8 +244,8 @@ Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden di
         stroke: color-orage-400,
         caption: "Auswertung - Die Hilfestellung des Tutors/der KI war für mich hilfreich",
       ),
-      plotst.graph_plot(
-        plotst.plot(
+      graph_plot(
+        plot(
           axes: (x_axis, y_axis),
           data: (
             ("06.11.2024", 5),
@@ -259,10 +260,10 @@ Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden di
     (100%, 20%),
   )
 
-  plotst.overlay(
+  overlay(
     (
-      plotst.graph_plot(
-        plotst.plot(
+      graph_plot(
+        plot(
           axes: (x_axis, y_axis),
           data: (
             ("06.11.2024", 5),
@@ -274,8 +275,8 @@ Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden di
         stroke: color-orage-400,
         caption: "Auswertung - Ich konnte die Aufgabe ohne Hilfe lösen",
       ),
-      plotst.graph_plot(
-        plotst.plot(
+      graph_plot(
+        plot(
           axes: (x_axis, y_axis),
           data: (
             ("06.11.2024", 2.5),
@@ -290,10 +291,10 @@ Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden di
     (100%, 20%),
   )
 
-  plotst.overlay(
+  overlay(
     (
-      plotst.graph_plot(
-        plotst.plot(
+      graph_plot(
+        plot(
           axes: (x_axis, y_axis),
           data: (
             ("06.11.2024", 3),
@@ -305,8 +306,8 @@ Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden di
         stroke: color-orage-400,
         caption: "Auswertung - Die Unterstützung des Tutors/der KI hat meine Lösungsansätze beeinflusst",
       ),
-      plotst.graph_plot(
-        plotst.plot(
+      graph_plot(
+        plot(
           axes: (x_axis, y_axis),
           data: (
             ("06.11.2024", 4),
@@ -321,10 +322,10 @@ Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden di
     (100%, 20%),
   )
 
-  plotst.overlay(
+  overlay(
     (
-      plotst.graph_plot(
-        plotst.plot(
+      graph_plot(
+        plot(
           axes: (x_axis, y_axis),
           data: (
             ("06.11.2024", 4.5),
@@ -336,8 +337,8 @@ Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden di
         stroke: color-orage-400,
         caption: "Auswertung - Den Antworten des Tutors/der KI habe ich vertraut",
       ),
-      plotst.graph_plot(
-        plotst.plot(
+      graph_plot(
+        plot(
           axes: (x_axis, y_axis),
           data: (
             ("06.11.2024", 5),
@@ -352,10 +353,10 @@ Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden di
     (100%, 20%),
   )
 
-  plotst.overlay(
+  overlay(
     (
-      plotst.graph_plot(
-        plotst.plot(
+      graph_plot(
+        plot(
           axes: (x_axis, y_axis),
           data: (
             ("06.11.2024", 1),
@@ -367,8 +368,8 @@ Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden di
         stroke: color-orage-400,
         caption: "Auswertung - Mein Wissensstand hat sich durch die Aufgabe verbessert",
       ),
-      plotst.graph_plot(
-        plotst.plot(
+      graph_plot(
+        plot(
           axes: (x_axis, y_axis),
           data: (
             ("06.11.2024", 3.5),
@@ -383,10 +384,10 @@ Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden di
     (100%, 20%),
   )
 
-  plotst.overlay(
+  overlay(
     (
-      plotst.graph_plot(
-        plotst.plot(
+      graph_plot(
+        plot(
           axes: (x_axis, y_axis),
           data: (
             ("06.11.2024", 5),
@@ -398,8 +399,8 @@ Im Folgenden werden die Ergebnisse der Selbsteinschätzungen der Studierenden di
         stroke: color-orage-400,
         caption: "Auswertung - Ich fühle mich sicher, eine ähnliche Aufgabe ohne Hilfe lösen zu können",
       ),
-      plotst.graph_plot(
-        plotst.plot(
+      graph_plot(
+        plot(
           axes: (x_axis, y_axis),
           data: (
             ("06.11.2024", 3),
@@ -445,113 +446,153 @@ Im Verlauf des Semesters wird ein systematischer Vergleich der Punktzahlen der G
 Da die Aufgaben unterschiedlich viele Punkte umfassen, wird der prozentuale Anteil der erreichten Punkte als Vergleichsmaßstab verwendet.
 Zudem erfolgt die Berechnung des Durchschnitts innerhalb der jeweiligen Gruppen.
 
-#figure(
-  [
-    #{
-      let x_axis_tasks = plotst.axis(
-        values: (
-          "",
-          "06.10",
-          "07.10",
-          "13.10",
-          "14.10",
-          "21.10",
-          "27.10",
-          "28.10",
-          "03.11",
-          "04.11",
-          "10.11",
-          "11.11",
-          "02.12",
-          "08.12",
-          "09.12",
-          "15.12",
-          "16.12",
-          "04.01",
+#{
+  let x_axis_tasks = axis(
+    values: (
+      "06.10",
+      "07.10",
+      "13.10",
+      "14.10",
+      "21.10",
+      "27.10",
+      "28.10",
+      "03.11",
+      "04.11",
+      "10.11",
+      "11.11",
+      "02.12",
+      "08.12",
+      "09.12",
+      "15.12",
+      "16.12",
+      "04.01",
+    ),
+    title: "Zeitverlauf des gesamten Semesters",
+    show_values: false,
+    location: "bottom",
+    show_markings: false,
+  )
+  let y_axis = axis(
+    min: 0,
+    max: 101,
+    step: 25,
+    location: "left",
+    title: "Erreichte Punkte",
+    value_formatter: "{}%",
+    show_markings: true,
+    helper_lines: true,
+  )
+
+  overlay(
+    (
+      graph_plot(
+        plot(
+          axes: (x_axis_tasks, y_axis),
+          data: (
+            ("06.10", 88),
+            ("07.10", 50),
+            ("13.10", 94),
+            ("14.10", 95),
+            ("21.10", 70),
+            ("27.10", 90),
+            ("28.10", 66),
+            ("03.11", 83),
+            ("04.11", 50),
+            ("10.11", 100),
+            ("11.11", 75),
+            ("02.12", 91),
+            ("08.12", 72),
+            ("09.12", 84),
+            ("15.12", 88),
+            ("16.12", 100),
+            ("04.01", 100),
+          ),
         ),
-        title: "Datum der Abgabe",
+        (100%, 100%),
+        stroke: color-orage-400,
+        caption: "Auswertung - Noten",
+      ),
+      graph_plot(
+        plot(
+          axes: (x_axis_tasks, y_axis),
+          data: (
+            ("06.10", 52),
+            ("07.10", 53),
+            ("13.10", 58),
+            ("14.10", 93),
+            ("21.10", 57),
+            ("27.10", 83),
+            ("28.10", 74),
+            ("03.11", 94),
+            ("04.11", 67),
+            ("10.11", 75),
+            ("11.11", 100),
+            ("02.12", 85),
+            ("08.12", 77),
+            ("09.12", 89),
+            ("15.12", 93),
+            ("16.12", 89),
+            ("04.01", 88),
+          ),
+        ),
+        (100%, 100%),
+        stroke: color-sky-400,
+      ),
+    ),
+    (100%, 20%),
+  )
+}
+
+Die Note ergibt sich aus den beiden Tests und einem 0.3 Bonus, wenn die Gesamtpunktzahl aller Aufgaben bei 80% liegt.
+
+#box_plot(
+  box_width: 70%,
+  pre_calculated: false,
+  plot(
+    axes: (
+      axis(
+        values: ("", "KG", "EG"),
         location: "bottom",
         show_markings: false,
-      )
-      let y_axis = plotst.axis(
+      ),
+      axis(
+        title: "Note",
         min: 0,
-        max: 101,
-        step: 25,
+        max: 6,
+        step: 1,
         location: "left",
-        title: "Erreichte Punkte in %",
-        show_markings: true,
         helper_lines: true,
-      )
-
-      plotst.overlay(
-        (
-          plotst.graph_plot(
-            plotst.plot(
-              axes: (x_axis_tasks, y_axis),
-              data: (
-                ("06.10", 88),
-                ("07.10", 50),
-                ("13.10", 94),
-                ("14.10", 95),
-                ("21.10", 70),
-                ("27.10", 90),
-                ("28.10", 66),
-                ("03.11", 83),
-                ("04.11", 50),
-                ("10.11", 100),
-                ("11.11", 75),
-                ("02.12", 91),
-                ("08.12", 72),
-                ("09.12", 84),
-                ("15.12", 88),
-                ("16.12", 100),
-                ("04.01", 100),
-              ),
-            ),
-            (100%, 100%),
-            stroke: color-orage-400,
-            caption: "Auswertung - Noten",
-          ),
-          plotst.graph_plot(
-            plotst.plot(
-              axes: (x_axis_tasks, y_axis),
-              data: (
-                ("06.10", 52),
-                ("07.10", 53),
-                ("13.10", 58),
-                ("14.10", 93),
-                ("21.10", 57),
-                ("27.10", 83),
-                ("28.10", 74),
-                ("03.11", 94),
-                ("04.11", 67),
-                ("10.11", 75),
-                ("11.11", 100),
-                ("02.12", 85),
-                ("08.12", 77),
-                ("09.12", 89),
-                ("15.12", 93),
-                ("16.12", 89),
-                ("04.01", 88),
-              ),
-            ),
-            (100%, 100%),
-            stroke: color-sky-400,
-          ),
-        ),
-        (100%, 20%),
-      )
-    }
-  ],
-  scope: "parent",
-  placement: top,
+      ),
+    ),
+    data: ((4, 4.7, 4.7), (3.3, 4.7, 3.7)),
+  ),
+  (100%, 20%),
+  caption: none,
+  stroke: color-gray-800,
 )
 
 = Schlussfolgerung
 
-Die Ergebnisse der Selbsteinschätzungen führen zu der Einschätzung, dass die Kontrollgruppe (KG) hinsichtlich des eigenständigen Problemlösens eine überlegene Lernerfahrung aufwies. Dieser Befund stützt sich insbesondere auf den Verlauf der Antwort zur Frage „Ich konnte die Aufgabe ohne Hilfe lösen“.
+== Tatsächlicher Lernerfolg (Noten)
 
-Der Verlauf der Frage „Mein Wissensstand hat sich durch die Aufgabe verbessert“ deutet hingegen darauf hin, dass die Experimentalgruppe (EG) möglicherweise einen höheren Lerneffekt erzielt hat – alternativ könnte es sein, dass die KG lediglich den Eindruck hatte, mehr gelernt zu haben. Da die Bewertungsresultate der Aufgaben beider Gruppen eng beieinanderliegen, lässt sich eine eindeutige Zuordnung jedoch nicht treffen.
+Die Noten der EG deuten auf keinerlei signifikante Verbesserung im Vergleich zur KG hin. Beide Gruppen erzielen durchweg äußerst schlechte Bewertungen, wodurch in beiden Fällen Studierende durchfallen.
+
+== Selbsteinschätzung in Bezug auf den Wissensstand
+
+Die Resultate der Selbsteinschätzungen legen nahe, dass die Kontrollgruppe (KG) hinsichtlich des eigenständigen Problemlösens eine überlegene Lernerfahrung vorweisen kann. Dieser Befund basiert insbesondere auf dem Verlauf der Antworten zu den Fragen "Ich konnte die Aufgabe ohne Hilfe lösen" und "Ich fühle mich sicher, eine ähnliche Aufgabe ohne Hilfe lösen zu können".
+
+Hingegen weist der Verlauf der Antworten auf die Frage "Mein Wissensstand hat sich durch die Aufgabe verbessert" darauf hin, dass die Experimentalgruppe (EG) möglicherweise einen höheren Lerneffekt realisiert hat – alternativ könnte es sein, dass die KG lediglich den Eindruck gewann, mehr gelernt zu haben. Aufgrund der nur geringen Unterschiede in den Bewertungsresultaten beider Gruppen ist eine eindeutige Deutung jedoch nicht möglich.
+
+== Unterschiede in der Interaktion mit Tutor und KI
+
+Aus meiner Beobachtung geht hervor, dass Studierende der EG im Umgang mit der KI weniger Zurückhaltung zeigten, Fragen zu stellen, als dies bei der KG der Fall war. Gleichzeitig konnte festgestellt werden, dass die Fähigkeit der KG, sich fachspezifisch adäquat auszudrücken, im Laufe des Semesters signifikant fortgeschritten ist. Beide Entwicklungen sind aus tutoraler Sicht als positiv zu bewerten, wobei die idealerweise angestrebte Situation in einer Verknüpfung beider Kompetenzen liegt.
+
+== Selbsteinschätzung im Gegensatz zum gemessenen Lernerfolg
+
+Die Antworten auf die Frage "Die Unterstützung des Tutors/der KI hat meine Lösungsansätze beeinflusst" deuten darauf hin, dass die EG sich bei der Bearbeitung der Aufgaben weniger stark auf die Hilfe der KI verlässt, wohingegen die KG vermehrt in Zusammenarbeit mit den Tutoren agiert.
+Die Antworten auf die Frage "Den Antworten des Tutors/der KI habe ich vertraut" zeigen, dass die KG nicht nur in intensiver Kooperation mit den Tutoren stand, sondern auch ein hohes Maß an Vertrauen in deren Expertise setzte. Die EG weist zwar ebenfalls ein hohes Vertrauen in die KI auf, wobei hier angesichts der hohen Fehlerrate aktueller KIs @sonntagbauer2023kunstliche ein niedrigerer Wert erwünscht gewesen wäre. Die insgesamt hohen Bewertungswerte legen jedoch nahe, dass die Antworten der KIs als durchaus hilfreich empfunden wurden.
+
+Betrachtet man abschließend die Antworten auf die Frage "Ich fühle mich sicher, eine ähnliche Aufgabe ohne Hilfe lösen zu können" unter Berücksichtigung der insgesamt schlechten Noten, so könnte gefolgert werden, dass sich die EG der eigenen suboptimalen Lernergebnisse bewusst war.
 
 = Diskussion
 
