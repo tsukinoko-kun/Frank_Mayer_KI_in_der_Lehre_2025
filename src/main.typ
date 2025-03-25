@@ -4,8 +4,6 @@
 #let color-sky-400 = rgb("#00BCFF")
 #let color-gray-800 = rgb("#6A7282")
 
-#set par.line(numbering: "1")
-
 #show: ieee.with(
   title: [Wie wirkt sich die Verwendung von KI auf den Lernerfolg von Software-Engineering-Studenten aus?],
   abstract: [
@@ -39,13 +37,15 @@
 = Einführung
 
 Chatbots wie ChatGPT sind noch relativ neu (Veröffentlichung 2022). @roumeliotis2023chatgpt
-Aus meiner persönlichen Beobachtung geht hervor, dass Kommilitonen vermehrt derartige Chatbots im Studienalltag einsetzen. Dabei fällt auf, dass die Ausgaben der KI oftmals ohne kritische Hinterfragung übernommen werden. Es stellt sich daher die Frage, inwieweit der Einsatz solcher Tools den Lernprozess sinnvoll unterstützt.
+Aus meiner Beobachtung geht hervor, dass Kommilitonen vermehrt derartige Chatbots im Studienalltag einsetzen. Dabei fällt auf, dass die Ausgaben der KI oftmals ohne kritische Hinterfragung übernommen werden. Es stellt sich daher die Frage, inwieweit der Einsatz solcher Tools den Lernprozess sinnvoll unterstützt.
 
-Ziel dieser Arbeit ist es, zu ermitteln, ob und unter welchen Bedingungen KI-basierte Chatbots den Lernerfolg von Studierenden im Bereich Software Engineering – exemplarisch am Fach Programmierung – verbessern können.
+Ziel dieser Arbeit ist es, diese Beobachtung zu überprüfen und zu sehen, unter welchen Bedingungen KI-basierte Chatbots den Lernerfolg von Studierenden im Bereich Software Engineering – exemplarisch am Fach Programmierung – verbessern können.
 
 Einige Studien legen nahe, dass personalisierte KI-Tutoren, die Lernstrategien wie distanziertes Lernen und gezielte Wiederholung fördern, signifikante Verbesserungen in den Lernleistungen bewirken können. Eine Untersuchung an der UniDistance Suisse zeigte, dass Studierende, welche einen derartigen KI-Tutor verwendeten, eine Verbesserung der Durchschnittsnoten um bis zu 15 Perzentilpunkten erzielten. @baillifard2024effective
 
 Eine weitere Studie demonstrierte, dass ein individualisiertes KI-Tutorsystem, das auf drei Developmental Learning Networks (DLNs) fußt und als mobile Applikation zur Sprachvermittlung (Koreanisch) für Kinder implementiert wurde, den Lernfortschritt signifikant fördert. Dabei wurde der Lernstand kontinuierlich erfasst und die Applikation an die individuellen Präferenzen der Kinder angepasst. @kim2020individualized
+
+Im Rahmen dieser Arbeit wird untersucht, ob ähnliche Effekte auch bei Studierenden im Bereich Software Engineering erzielt werden können. Die Ergebnisse sollen Aufschluss darüber geben, wie KI-Tools effektiv in der Hochschullehre eingesetzt werden können.
 
 = Forschungsfragen
 
@@ -63,7 +63,7 @@ Inwiefern beeinflusst der Einsatz KI-basierter Tools den Lernerfolg von Studiere
 
 Die vorliegende Untersuchung wird im Rahmen der Vorlesung "Interaktive Programme" an der Hochschule Heilbronn durchgeführt. Diese Vorlesung, die im ersten Semester des Bachelorstudiengangs Software Engineering angesiedelt ist, vermittelt grundlegende Programmierkenntnisse. Im Rahmen der Studie erproben die Studierenden gezielt Lernprozesse, wobei einerseits der Einsatz von KI-basierten Tools und andererseits traditionelle Lehrmethoden Anwendung finden.
 
-Zusätzlich zur Vorlesung wird ein Tutorium als Zusatzveranstaltung angeboten, das von mir und einem Kollegen geleitet wird. Der Termin dieses Tutoriums wurde in Abstimmung mit den Studierenden auf zwei Tage nach der regulären Vorlesung festgelegt. Die Teilnahme erfolgt freiwillig, wird jedoch insbesondere denjenigen Studierenden nahegelegt, die anhand der Übungspunkte Schwierigkeiten bei der Aneignung der Lehrinhalte aufweisen.
+Zusätzlich zur Vorlesung wird ein Tutorium als Zusatzveranstaltung angeboten, das von zwei Tutoren (mir und einem Kollegen) geleitet wird. Insgesamt nahmen etwa 20 Studierende unregelmäßig am Tutorium teil, wobei 6 von ihnen an der Studie partizipierten. Der Termin des Tutoriums wurde in Abstimmung mit den Studierenden auf zwei Tage nach der regulären, wöchentlichen Vorlesung festgelegt. Die Teilnahme erfolgt freiwillig, wird jedoch insbesondere denjenigen Studierenden nahegelegt, die anhand der Übungspunkte Schwierigkeiten bei der Aneignung der Lehrinhalte aufweisen.
 
 == Forschungsdesign
 
@@ -76,13 +76,11 @@ Beide Gruppen setzen sich aus den Teilnehmenden der Vorlesung "Interaktive Progr
 Die Studierenden werden in zwei Gruppen unterteilt:
 
 - *KG*: Nicht-KI-Gruppe #linebreak()
-  Die Studierenden der Kontrollgruppe werden angewiesen, auf den Einsatz von KI-Tools zu verzichten. Sie nehmen an einem traditionellen Tutorium teil, in dem sie bei der Problemlösung unterstützt werden und Erklärungen zur Aufgabenstellung erhalten, ohne jedoch konkrete Lösungsansätze präsentiert zu bekommen. Stattdessen erhalten sie dezente Hinweise, die sie zur eigenständigen Erarbeitung anleiten. #linebreak()
-  Da die Studierenden im ersten Semester über begrenzte Vorkenntnisse verfügen und nicht mit den technischen Hintergründen von KI-Tools vertraut sind, erfolgt eine gezielte Aufklärung über KI-basierte Tools sowie eine Empfehlung, welche dieser Tools aufgrund ihrer spezifischen Funktionalität nicht verwendet werden sollten. Es kann jedoch nicht gänzlich verhindert werden, dass Studierende außerhalb des Tutoriums auf KI-Tools zugreifen.
+  Die Studierenden der Kontrollgruppe werden angewiesen, auf den Einsatz von KI-Tools zu verzichten. Sie nehmen an einem traditionellen Tutorium teil, wie es schon seit Jahren umgesetzt wird. #linebreak()
+  Da die Studierenden im ersten Semester über begrenzte Vorkenntnisse verfügen und nicht mit den technischen Hintergründen von KI-Tools vertraut sind, erfolgt eine gezielte Aufklärung über KI-basierte Tools sowie eine Empfehlung, welche dieser Tools aufgrund ihrer spezifischen Funktionalität nicht verwendet werden sollten.
 
 - *EG*: KI-Tutor-Gruppe #linebreak()
   Die Studierenden der Experimentalgruppe werden ermutigt, KI-gestützte Tools zur Unterstützung ihres Lernprozesses einzusetzen. Konkret sollen Chatbots wie Claude für Verständnisfragen herangezogen werden. Der Chatbot wird mittels Rollen-Prompts @zheng2023helpful so konfiguriert, dass er als tutorielle Instanz agiert, welche die Studierenden schrittweise durch den Lösungsweg führt, ohne konkrete Lösungsansätze zu liefern. #linebreak()
-
-Die Verwendung meines Rollen-Prompts ist freiwillig, dieser steht im Kapitel "Verwendete Tools".
 
 Um eine effektive Nutzung der KI-Tools zu gewährleisten, erhalten die Studierenden eine ausführliche Einführung sowie Unterstützung bei der Anwendung. Während Prüfungen, wie Tests und Klausuren, ist der Einsatz von KI-Tools untersagt. Diese Einschränkung dient zugleich der Überprüfung der in der Studie "Generative AI Can Harm Learning" @bastani2024generative dargestellten Ergebnisse, wonach der kurzfristige Lernerfolg durch KI-Einsatz im Anschluss an einen KI-unabhängigen Betrieb nachlässt.
 
@@ -95,6 +93,7 @@ Die Teilnahme an der Studie steht sämtlichen Studierenden des Studiengangs Soft
 Zu Beginn des Semesters werden alle Studierenden um ihre freiwillige Teilnahme an der Studie gebeten. Im Zuge dessen erhalten sie detaillierte Informationen über die Zielsetzung der Untersuchung sowie die Zusammensetzung der Gruppen.
 
 Vor Zuteilung erfolgte bereits eine Bewertung von sieben Aufgaben (über drei Wochen). Die Hälfte der Aufgaben wurde während der Vorlesungen durchgeführt, die andere Hälfte als Hausaufgaben. Die Zuteilung zu den Gruppen erfolgt unter Berücksichtigung der bisherigen Leistungsbewertung, um eine möglichst ausgeglichene Verteilung zu erreichen. "Ausgeglichen" bedeutet hier, dass beide Gruppen etwa gleich viele Teilnehmende sowie vergleichbare Gesamtpunktzahlen aus den bisherigen Aufgaben aufweisen.
+Die Studierenden werden darüber informiert, dass es diese beiden Gruppen gibt, wie die Zuteilung zustande kommt und die Gruppenzugehörigkeit bleibt über den gesamten Versuchszeitraum bestehen. Beide Gruppen befinden sich während dem Tutorium im selben Raum, zusammen mit den Studierenden, die nicht am Versuch partizipieren.
 
 == Verwendete Tools
 
@@ -108,37 +107,8 @@ Die Studierenden der Experimentalgruppe (EG) können eigenständig auswählen, w
 - *#link("https://chat.openai.com")[ChatGPT]* #linebreak()
   Ein Chatbot, der auf den GPT-4o- und GPT-4o mini-Modellen von OpenAI basiert.
 
-Basierend auf meinen Erfahrungen erweist sich Claude als besonders geeignet für tutorielle Unterstützung, da dieses LLM zunächst versucht, die zugrunde liegenden Probleme zu identifizieren, bevor Lösungsvorschläge unterbreitet werden. Dieses Vorgehen ähnelt dem moderner advanced reasoning Modelle (die erst nach Beginn des Versuchs verfügbar waren), wobei letzteres nach einer weiterführenden Reflexion der Aufgabenstellung fragt, während Claude 3.5 Sonnet dem Anwender Methoden zur detaillierten Problemanalyse liefert. Im Gegensatz dazu generiert GPT unmittelbar Lösungsvorschläge, die häufig nicht ausreichend auf das Problem eingehen, sofern die Aufgabenstellung nicht eindeutig formuliert wurde. @parmarprompt
-
-Generischer Rollen-Prompt, der von mir mit dem Ziel geschrieben wurde eine Herangehensweise zu verfolgen wie das für uns Tutoren an der Hochschule Heilbronn üblich ist.
-
-```text
-[System Message – Rollenspiel für einen tutorischen LLM-Assistenten]
-
-Du agierst als Tutor für die Vorlesung "Interaktive Programme" im ersten Semester des Studiengangs Software Engineering. Deine Rolle ist es, den Studierenden (Anwender) schrittweise und methodisch durch Lösungswege zu führen, ohne dabei fertige Lösungsansätze zu liefern. Dabei beachte bitte die folgenden Vorgaben:
-
-1. **Aufgabenverständnis sicherstellen**
-   - Beginne jede Sitzung damit, sicherzustellen, dass der Studierende die zu bearbeitende Aufgabe vollständig verstanden hat.
-   - Frage gezielt nach, ob alle Kriterien, Bedingungen und Ziele der Aufgabe klar sind. Falls es Unklarheiten gibt, bitte den Studierenden, diese genauer zu beschreiben.
-2. **Schrittweise, unterstützende Hinweise geben**
-   - Leite den Studierenden in kleinen, nachvollziehbaren Schritten an.
-   - Gib Hinweise, die den Denkprozess des Studierenden anregen, anstatt ihm konkrete Lösungen zu präsentieren.
-   - Verwende Formulierungen wie: "Überlege, wie du ...", "Was wäre, wenn du ... ausprobierst?" oder "Welche Konsequenz hat ... für dein Programm?".
-3. **Ermutigung zum selbständigen Arbeiten und Ausprobieren**
-   - Berücksichtige, dass der Wissensstand zu Beginn noch niedrig sein kann, und animiere den Studierenden, experimentell vorzugehen und eigene Hypothesen zu entwickeln.
-   - Stelle unterstützende Fragen, die den Studierenden dazu anregen, eigene Wege zur Lösungsfindung zu explorieren.
-4. **Klärung bei Unklarheiten**
-   - Wenn die Aufgabenstellung unklar ist oder der Studierende Nachfragen hat, bitte ihn, die Problemstellung oder seine Frage genauer zu formulieren.
-   - Nutze präzisierende Fragen, um Missverständnisse zu vermeiden, bevor du weitere Hinweise gibst.
-5. **Anleitung statt direkter Antworten**
-   - Wenn der Studierende konkrete Fragen stellt, gib wenn möglich immer nur Hinweise oder eine Anleitung, wie er selbst zu einer Lösung gelangen kann – anstatt direkt die Antwort zu liefern.
-   - Ermutige den Studierenden dazu, eigene Ansätze zu entwickeln und diese auszuprobieren.
-6. **Kommunikationsstil und Didaktik**
-   - Verwende eine unterstützende, geduldige und motivierende Sprache, die zum eigenständigen Denken anregt.
-   - Passe den didaktischen Ansatz dem niedrigen Vorwissen an und gehe schrittweise vor, ohne den Studierenden zu über- oder unterfordern.
-
-Ab sofort wirst du dem Anwender als Studierendem begegnen und ihn bei seinen Aufgaben begleiten, indem du ihn aktiv dazu anleitest, eigene Lösungswege zu entwickeln – immer mit dem Ziel, seine Selbständigkeit und sein Verständnis zu fördern.
-```
+Die Studierenden erhielten Tipps, die auf meiner persönlichen Erfahrungen basieren und nicht wissenschaftlich geprüft sind.
+Mir erwies sich Claude als besonders geeignet für tutorielle Unterstützung, da dieses LLM zunächst versucht, die zugrunde liegenden Probleme zu identifizieren, bevor Lösungsvorschläge unterbreitet werden. Dieses Vorgehen ähnelt dem moderner advanced reasoning Modelle (die erst nach Beginn des Versuchs verfügbar waren), wobei letzteres nach einer weiterführenden Reflexion der Aufgabenstellung fragt, während Claude 3.5 Sonnet dem Anwender Methoden zur detaillierten Problemanalyse liefert. Im Gegensatz dazu generiert GPT unmittelbar Lösungsvorschläge, die häufig nicht ausreichend auf das Problem eingehen, sofern die Aufgabenstellung nicht eindeutig formuliert wurde. @parmarprompt
 
 == Datenerhebung
 
@@ -161,7 +131,7 @@ Ab sofort wirst du dem Anwender als Studierendem begegnen und ihn bei seinen Auf
 
 === Auswertung
 
-+ *Aufgabenbewertung*: Sämtliche Aufgaben werden von meinem Kollegen und mir bewertet. Jede Teilaufgabe wird vollständig von einem Tutor beurteilt, sodass eine konsistente Bewertung gewährleistet werden kann. Die erzielten Punkte sowie deren Entwicklung im Verlauf des Semesters werden sowohl auf individueller Basis als auch anhand von Median und Durchschnitt innerhalb der jeweiligen Gruppen analysiert.
++ *Aufgabenbewertung*: Sämtliche Aufgaben werden von meinem Kollegen und mir bewertet. Jede Teilaufgabe wird vollständig von einem Tutor beurteilt, sodass eine konsistente Bewertung gewährleistet werden kann. Die erzielten Punkte sowie deren Entwicklung im Verlauf des Semesters werden anhand vom Durchschnitt innerhalb der jeweiligen Gruppen analysiert. Es ist zu beachten, dass die Abweichung vom Durchschnitt in beiden Gruppen gering ist (etwa 10 Punkte).
 + *Beobachtungen*: Die in den Protokollen dokumentierten Beobachtungen werden qualitativ ausgewertet. Besonderes Augenmerk gilt dabei signifikanten Auffälligkeiten und Unterschieden zwischen den Gruppen. Eine quantitative Auswertung ist in diesem Zusammenhang nicht vorgesehen; vielmehr sollen aus den qualitativen Daten relevante Muster und Differenzierungen abgeleitet werden.
 + *Selbsteinschätzung*: Die Auswertung der Selbsteinschätzungsdaten erfolgt anhand des Fragebogens. Hierbei wird insbesondere der Vergleich zwischen den Gruppen hinsichtlich potenzieller Überschätzungen in der Experimentalgruppe (EG) berücksichtigt.
 
@@ -510,7 +480,7 @@ Zudem erfolgt die Berechnung des Durchschnitts innerhalb der jeweiligen Gruppen.
         ),
         (100%, 100%),
         stroke: color-orage-400,
-        caption: "Auswertung - Noten",
+        caption: "Auswertung - Punkte in den Bewertungen (Gruppendurchschnitte)",
       ),
       graph_plot(
         plot(
@@ -567,7 +537,7 @@ Die Note ergibt sich aus den beiden Tests und einem 0.3 Bonus, wenn die Gesamtpu
     data: ((4, 4.7, 4.7), (3.3, 4.7, 3.7)),
   ),
   (100%, 20%),
-  caption: none,
+  caption: "Auswertung - Endnoten",
   stroke: color-gray-800,
 )
 
@@ -596,13 +566,15 @@ Betrachtet man abschließend die Antworten auf die Frage "Ich fühle mich sicher
 
 = Diskussion
 
-Die vorliegende Untersuchung weist mehrere methodische Limitationen auf, die bei der Interpretation der Ergebnisse berücksichtigt werden müssen. Ein wesentlicher Kritikpunkt bezieht sich auf die geringe Teilnehmerzahl, was die statistische Aussagekraft der Studie erheblich einschränkt. Zwar lässt sich aus den Selbsteinschätzungsdaten eine Tendenz erkennen, wonach die Kontrollgruppe (KG) eine moderat bessere Lernerfahrung aufwies als die Experimentalgruppe (EG), jedoch ist aufgrund der kleinen Stichprobe keine generalisierbare Aussage möglich. Im Durchschnitt nahmen 10 Studierende am Tutorium teil, wovon 6 an der Studie partizipierten.
+Die vorliegende Untersuchung weist mehrere methodische Limitationen auf, die bei der Interpretation der Ergebnisse berücksichtigt werden müssen. Ein wesentlicher Kritikpunkt bezieht sich auf die geringe Teilnehmerzahl, was die statistische Aussagekraft der Studie erheblich einschränkt. Zwar lässt sich aus den Selbsteinschätzungsdaten eine Tendenz erkennen, wonach die Kontrollgruppe (KG) eine moderat bessere Lernerfahrung aufwies als die Experimentalgruppe (EG), jedoch ist aufgrund der kleinen Stichprobe keine generalisierbare Aussage möglich. Insgesamt nahmen etwa 20 Studierende unregelmäßig am Tutorium teil, wobei 6 von ihnen freiwillig an der Studie partizipierten.
 
 Ein weiteres Problemfeld stellt die inkonsistente Ausfüllung des Fragebogens dar. Die vorliegenden Unstimmigkeiten in den Rückmeldungen der Teilnehmenden werfen erhebliche Zweifel an der Validität der erhobenen Selbsteinschätzungsdaten auf. Es ist demnach anzunehmen, dass methodische Schwächen in der Datenerhebung die ermittelten Ergebnisse beeinflusst haben.
 
 Während des Versuchs wurde bewusst darauf verzichtet, frühzeitig einen Blick auf die Ergebnisse zu werfen, um eine Beeinflussung der Versuchsteilnehmenden zu vermeiden. Rückblickend hätte eine zeitnahe Kontrolle der Daten ermöglicht, die Teilnehmenden vermehrt zur regelmäßigen Fragebogenteilnahme anzuhalten. Dennoch stand für mich stets die Lernförderung der Studierenden im Vordergrund, sodass die Datenerhebung in einigen Aspekten nachrangig behandelt wurde.
 
 Zudem gestaltete sich die präzise Definition der erforderlichen Daten für eine aussagekräftige Auswertung als herausfordernd. Diese retrospektive Erkenntnis unterstreicht die Notwendigkeit einer detaillierteren Planung der Datenerhebung in zukünftigen Studien, um methodische Unklarheiten von vornherein auszuschließen.
+
+Es lässt sich nicht verhindern, dass die Studierenden zu Hause ihre Aufgaben mit KI-Tools lösen oder diese während dem Tutorium/der Vorlesung verstecken. Diese Unsicherheit kann das Ergebnis beeinträchtigen.
 
 Zusammenfassend liefert die vorliegende Arbeit, trotz positiver Tendenzen in den Selbsteinschätzungen, wesentliche methodische Erkenntnisse, die als Grundlage für weiterführende Untersuchungen zum Einsatz von KI-Tools im Bildungsbereich herangezogen werden können. Für zukünftige Studien wird empfohlen, eine größere Stichprobe zu verwenden und die Datenerhebung konsequenter zu gestalten, um robuste und generalisierbare Ergebnisse zu erzielen.
 
